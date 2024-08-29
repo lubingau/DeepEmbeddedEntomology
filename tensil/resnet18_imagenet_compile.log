@@ -1,0 +1,2630 @@
+--------------------------------------------------
+LAYER 0 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    8
+Partitions:                                128
+Partition results size:                    201
+Partition accumulator size:                2,047
+Partition local size:                      5,454
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  3,556
+Partition average number of instructions:  3,313
+Execution latency (MCycles):               6.538
+Aggregate latency (MCycles):               6.538
+Execution energy (MUnits):                 414.434
+Aggregate energy (MUnits):                 414.434
+MAC efficiency (%):                        27.775
+Total number of instructions:              424,144
+Accumulator utilization (%):               99.951
+Local utilization (%):                     66.577
+True MACs (MMAC):                          116.215
+MAC efficiency (%):                        27.775
+--------------------------------------------------
+-----------------------------------------
+LAYER 0 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 81,144  5,465,264
+DataMove(DRAM0ToLocal): 856     584,808
+DataMove(DRAM1ToLocal): 8       3,144
+DataMove(AccToLocal):   128     24,200
+SIMD:                   329,464 329,464
+DataMove(LocalToDRAM0): 128     24,200
+LoadWeights:            12,416  56,448
+TOTAL:                  424,144 6,487,528
+-----------------------------------------
+---------------------------------------
+LAYER 0 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 5.515   MCycles
+DataMove(DRAM0ToLocal): 584.808 KCycles
+DataMove(DRAM1ToLocal): 3.144   KCycles
+DataMove(AccToLocal):   24.200  KCycles
+SIMD:                   329.464 KCycles
+DataMove(LocalToDRAM0): 24.200  KCycles
+LoadWeights:            56.448  KCycles
+TOTAL:                  6.538   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 0 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 349.777 MUnits
+DataMove(DRAM0ToLocal): 58.481  MUnits
+DataMove(DRAM1ToLocal): 314.400 KUnits
+DataMove(AccToLocal):   242.000 KUnits
+SIMD:                   2.636   MUnits
+DataMove(LocalToDRAM0): 2.420   MUnits
+LoadWeights:            564.480 KUnits
+TOTAL:                  414.434 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 0 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   128                                                                          
+DataMove(AccToLocal)#1:   128                                                                          
+DataMove(DRAM0ToLocal)#0: 856                                                                          
+DataMove(DRAM0ToLocal)#1: 856                                                                          
+DataMove(DRAM1ToLocal)#0: 8                                                                            
+DataMove(DRAM1ToLocal)#1:                                  8                                           
+DataMove(LocalToDRAM0)#0: 128                                                                          
+DataMove(LocalToDRAM0)#1:                                  128                                         
+LoadWeights#0:            6,272                                                                        
+MatMul#0:                            60,144                                                            
+MatMul#1:                 81,144                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 0 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   201                                                                          
+DataMove(AccToLocal)#1:   201                                                                          
+DataMove(DRAM0ToLocal)#0: 4,407                                                                        
+DataMove(DRAM0ToLocal)#1: 4,407                                                                        
+DataMove(DRAM1ToLocal)#0: 393                                                                          
+DataMove(DRAM1ToLocal)#1:                                  393                                         
+DataMove(LocalToDRAM0)#0: 201                                                                          
+DataMove(LocalToDRAM0)#1:                                  201                                         
+LoadWeights#0:            9                                                                            
+MatMul#0:                            111                                                               
+MatMul#1:                 224                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 0 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   189                                                                          
+DataMove(AccToLocal)#1:   189                                                                          
+DataMove(DRAM0ToLocal)#0: 683                                                                          
+DataMove(DRAM0ToLocal)#1: 683                                                                          
+DataMove(DRAM1ToLocal)#0: 393                                                                          
+DataMove(DRAM1ToLocal)#1:                                  393                                         
+DataMove(LocalToDRAM0)#0: 189                                                                          
+DataMove(LocalToDRAM0)#1:                                  189                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                            90                                                                
+MatMul#1:                 67                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 1 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    8
+Partitions:                                32
+Partition results size:                    796
+Partition accumulator size:                1,592
+Partition local size:                      8,189
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  2,368
+Partition average number of instructions:  2,276
+Execution latency (MCycles):               2.074
+Aggregate latency (MCycles):               2.074
+Execution energy (MUnits):                 136.549
+Aggregate energy (MUnits):                 136.549
+MAC efficiency (%):                        81.990
+Total number of instructions:              72,848
+Accumulator utilization (%):               77.734
+Local utilization (%):                     99.963
+True MACs (MMAC):                          108.827
+MAC efficiency (%):                        81.990
+--------------------------------------------------
+----------------------------------------
+LAYER 1 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+----------------------------------------
+MatMul:                 43,904 1,742,400
+DataMove(DRAM0ToLocal): 32     215,104
+DataMove(DRAM1ToLocal): 8      4,616
+DataMove(AccToLocal):   32     24,200
+SIMD:                   24,232 24,232
+DataMove(LocalToDRAM0): 32     24,200
+LoadWeights:            4,608  20,736
+TOTAL:                  72,848 2,055,488
+----------------------------------------
+---------------------------------------
+LAYER 1 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.761   MCycles
+DataMove(DRAM0ToLocal): 215.104 KCycles
+DataMove(DRAM1ToLocal): 4.616   KCycles
+DataMove(AccToLocal):   24.200  KCycles
+SIMD:                   24.232  KCycles
+DataMove(LocalToDRAM0): 24.200  KCycles
+LoadWeights:            20.736  KCycles
+TOTAL:                  2.074   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 1 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 111.514 MUnits
+DataMove(DRAM0ToLocal): 21.510  MUnits
+DataMove(DRAM1ToLocal): 461.600 KUnits
+DataMove(AccToLocal):   242.000 KUnits
+SIMD:                   193.856 KUnits
+DataMove(LocalToDRAM0): 2.420   MUnits
+LoadWeights:            207.360 KUnits
+TOTAL:                  136.549 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 1 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   32                                                                           
+DataMove(AccToLocal)#1:   32                                                                           
+DataMove(DRAM0ToLocal)#0: 32                                                                           
+DataMove(DRAM0ToLocal)#1: 32                                                                           
+DataMove(DRAM1ToLocal)#0: 8                                                                            
+DataMove(DRAM1ToLocal)#1:                                  8                                           
+DataMove(LocalToDRAM0)#0: 32                                                                           
+DataMove(LocalToDRAM0)#1:                                  32                                          
+LoadWeights#0:            2,336                                                                        
+MatMul#0:                 192                              22,592                                      
+MatMul#1:                 43,904                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 1 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   796                                                                          
+DataMove(AccToLocal)#1:   796                                                                          
+DataMove(DRAM0ToLocal)#0: 6,864                                                                        
+DataMove(DRAM0ToLocal)#1: 6,864                                                                        
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToDRAM0)#0: 796                                                                          
+DataMove(LocalToDRAM0)#1:                                  796                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                796                                         
+MatMul#1:                 796                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 1 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   756                                                                          
+DataMove(AccToLocal)#1:   756                                                                          
+DataMove(DRAM0ToLocal)#0: 6,722                                                                        
+DataMove(DRAM0ToLocal)#1: 6,722                                                                        
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToDRAM0)#0: 756                                                                          
+DataMove(LocalToDRAM0)#1:                                  756                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                75                                          
+MatMul#1:                 40                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 2 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    8
+Partitions:                                40
+Partition results size:                    682
+Partition accumulator size:                2,046
+Partition local size:                      8,183
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  2,746
+Partition average number of instructions:  2,462
+Execution latency (MCycles):               2.163
+Aggregate latency (MCycles):               2.163
+Execution energy (MUnits):                 140.160
+Aggregate energy (MUnits):                 140.160
+MAC efficiency (%):                        78.601
+Total number of instructions:              98,504
+Accumulator utilization (%):               99.902
+Local utilization (%):                     99.890
+True MACs (MMAC):                          108.827
+MAC efficiency (%):                        78.601
+--------------------------------------------------
+----------------------------------------
+LAYER 2 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+----------------------------------------
+MatMul:                 44,096 1,742,400
+DataMove(DRAM0ToLocal): 80     246,344
+DataMove(DRAM1ToLocal): 8      4,616
+DataMove(AccToLocal):   40     24,200
+DataMove(LocalToAcc):   40     24,200
+SIMD:                   48,440 48,440
+DataMove(LocalToDRAM0): 40     24,200
+LoadWeights:            5,760  25,920
+TOTAL:                  98,504 2,140,320
+----------------------------------------
+---------------------------------------
+LAYER 2 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.765   MCycles
+DataMove(DRAM0ToLocal): 246.344 KCycles
+DataMove(DRAM1ToLocal): 4.616   KCycles
+DataMove(AccToLocal):   24.200  KCycles
+DataMove(LocalToAcc):   24.200  KCycles
+SIMD:                   48.440  KCycles
+DataMove(LocalToDRAM0): 24.200  KCycles
+LoadWeights:            25.920  KCycles
+TOTAL:                  2.163   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 2 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 111.514 MUnits
+DataMove(DRAM0ToLocal): 24.634  MUnits
+DataMove(DRAM1ToLocal): 461.600 KUnits
+DataMove(AccToLocal):   242.000 KUnits
+DataMove(LocalToAcc):   242.000 KUnits
+SIMD:                   387.520 KUnits
+DataMove(LocalToDRAM0): 2.420   MUnits
+LoadWeights:            259.200 KUnits
+TOTAL:                  140.160 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 2 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   40                                                                           
+DataMove(AccToLocal)#1:   40                                                                           
+DataMove(DRAM0ToLocal)#0: 80                                                                           
+DataMove(DRAM0ToLocal)#1: 40                               40                                          
+DataMove(DRAM1ToLocal)#0: 8                                                                            
+DataMove(DRAM1ToLocal)#1:                                  8                                           
+DataMove(LocalToAcc)#0:   40                                                                           
+DataMove(LocalToAcc)#1:   40                                                                           
+DataMove(LocalToDRAM0)#0: 40                                                                           
+DataMove(LocalToDRAM0)#1:                                  40                                          
+LoadWeights#0:            2,920                                                                        
+MatMul#0:                                                  22,976                                      
+MatMul#1:                 44,096                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 2 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   682                                                                          
+DataMove(AccToLocal)#1:   682                                                                          
+DataMove(DRAM0ToLocal)#0: 6,264                                                                        
+DataMove(DRAM0ToLocal)#1: 6,264                            682                                         
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToAcc)#0:   682                                                                          
+DataMove(LocalToAcc)#1:   682                                                                          
+DataMove(LocalToDRAM0)#0: 682                                                                          
+DataMove(LocalToDRAM0)#1:                                  682                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                  682                                         
+MatMul#1:                 682                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 2 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   605                                                                          
+DataMove(AccToLocal)#1:   605                                                                          
+DataMove(DRAM0ToLocal)#0: 3,079                                                                        
+DataMove(DRAM0ToLocal)#1: 5,554                            605                                         
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToAcc)#0:   605                                                                          
+DataMove(LocalToAcc)#1:   605                                                                          
+DataMove(LocalToDRAM0)#0: 605                                                                          
+DataMove(LocalToDRAM0)#1:                                  605                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                  74                                          
+MatMul#1:                 40                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 3 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    8
+Partitions:                                32
+Partition results size:                    796
+Partition accumulator size:                1,592
+Partition local size:                      8,189
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  2,368
+Partition average number of instructions:  2,276
+Execution latency (MCycles):               2.074
+Aggregate latency (MCycles):               2.074
+Execution energy (MUnits):                 136.549
+Aggregate energy (MUnits):                 136.549
+MAC efficiency (%):                        81.990
+Total number of instructions:              72,848
+Accumulator utilization (%):               77.734
+Local utilization (%):                     99.963
+True MACs (MMAC):                          108.827
+MAC efficiency (%):                        81.990
+--------------------------------------------------
+----------------------------------------
+LAYER 3 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+----------------------------------------
+MatMul:                 43,904 1,742,400
+DataMove(DRAM0ToLocal): 32     215,104
+DataMove(DRAM1ToLocal): 8      4,616
+DataMove(AccToLocal):   32     24,200
+SIMD:                   24,232 24,232
+DataMove(LocalToDRAM0): 32     24,200
+LoadWeights:            4,608  20,736
+TOTAL:                  72,848 2,055,488
+----------------------------------------
+---------------------------------------
+LAYER 3 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.761   MCycles
+DataMove(DRAM0ToLocal): 215.104 KCycles
+DataMove(DRAM1ToLocal): 4.616   KCycles
+DataMove(AccToLocal):   24.200  KCycles
+SIMD:                   24.232  KCycles
+DataMove(LocalToDRAM0): 24.200  KCycles
+LoadWeights:            20.736  KCycles
+TOTAL:                  2.074   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 3 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 111.514 MUnits
+DataMove(DRAM0ToLocal): 21.510  MUnits
+DataMove(DRAM1ToLocal): 461.600 KUnits
+DataMove(AccToLocal):   242.000 KUnits
+SIMD:                   193.856 KUnits
+DataMove(LocalToDRAM0): 2.420   MUnits
+LoadWeights:            207.360 KUnits
+TOTAL:                  136.549 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 3 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   32                                                                           
+DataMove(AccToLocal)#1:   32                                                                           
+DataMove(DRAM0ToLocal)#0: 32                                                                           
+DataMove(DRAM0ToLocal)#1: 32                                                                           
+DataMove(DRAM1ToLocal)#0: 8                                                                            
+DataMove(DRAM1ToLocal)#1:                                  8                                           
+DataMove(LocalToDRAM0)#0: 32                                                                           
+DataMove(LocalToDRAM0)#1:                                  32                                          
+LoadWeights#0:            2,336                                                                        
+MatMul#0:                 192                              22,592                                      
+MatMul#1:                 43,904                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 3 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   796                                                                          
+DataMove(AccToLocal)#1:   796                                                                          
+DataMove(DRAM0ToLocal)#0: 6,864                                                                        
+DataMove(DRAM0ToLocal)#1: 6,864                                                                        
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToDRAM0)#0: 796                                                                          
+DataMove(LocalToDRAM0)#1:                                  796                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                796                                         
+MatMul#1:                 796                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 3 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   756                                                                          
+DataMove(AccToLocal)#1:   756                                                                          
+DataMove(DRAM0ToLocal)#0: 6,722                                                                        
+DataMove(DRAM0ToLocal)#1: 6,722                                                                        
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToDRAM0)#0: 756                                                                          
+DataMove(LocalToDRAM0)#1:                                  756                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                75                                          
+MatMul#1:                 40                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 4 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    8
+Partitions:                                40
+Partition results size:                    682
+Partition accumulator size:                2,046
+Partition local size:                      8,183
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  2,746
+Partition average number of instructions:  2,462
+Execution latency (MCycles):               2.163
+Aggregate latency (MCycles):               2.163
+Execution energy (MUnits):                 140.160
+Aggregate energy (MUnits):                 140.160
+MAC efficiency (%):                        78.601
+Total number of instructions:              98,504
+Accumulator utilization (%):               99.902
+Local utilization (%):                     99.890
+True MACs (MMAC):                          108.827
+MAC efficiency (%):                        78.601
+--------------------------------------------------
+----------------------------------------
+LAYER 4 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+----------------------------------------
+MatMul:                 44,096 1,742,400
+DataMove(DRAM0ToLocal): 80     246,344
+DataMove(DRAM1ToLocal): 8      4,616
+DataMove(AccToLocal):   40     24,200
+DataMove(LocalToAcc):   40     24,200
+SIMD:                   48,440 48,440
+DataMove(LocalToDRAM0): 40     24,200
+LoadWeights:            5,760  25,920
+TOTAL:                  98,504 2,140,320
+----------------------------------------
+---------------------------------------
+LAYER 4 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.765   MCycles
+DataMove(DRAM0ToLocal): 246.344 KCycles
+DataMove(DRAM1ToLocal): 4.616   KCycles
+DataMove(AccToLocal):   24.200  KCycles
+DataMove(LocalToAcc):   24.200  KCycles
+SIMD:                   48.440  KCycles
+DataMove(LocalToDRAM0): 24.200  KCycles
+LoadWeights:            25.920  KCycles
+TOTAL:                  2.163   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 4 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 111.514 MUnits
+DataMove(DRAM0ToLocal): 24.634  MUnits
+DataMove(DRAM1ToLocal): 461.600 KUnits
+DataMove(AccToLocal):   242.000 KUnits
+DataMove(LocalToAcc):   242.000 KUnits
+SIMD:                   387.520 KUnits
+DataMove(LocalToDRAM0): 2.420   MUnits
+LoadWeights:            259.200 KUnits
+TOTAL:                  140.160 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 4 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   40                                                                           
+DataMove(AccToLocal)#1:   40                                                                           
+DataMove(DRAM0ToLocal)#0: 80                                                                           
+DataMove(DRAM0ToLocal)#1: 40                               40                                          
+DataMove(DRAM1ToLocal)#0: 8                                                                            
+DataMove(DRAM1ToLocal)#1:                                  8                                           
+DataMove(LocalToAcc)#0:   40                                                                           
+DataMove(LocalToAcc)#1:   40                                                                           
+DataMove(LocalToDRAM0)#0: 40                                                                           
+DataMove(LocalToDRAM0)#1:                                  40                                          
+LoadWeights#0:            2,920                                                                        
+MatMul#0:                                                  22,976                                      
+MatMul#1:                 44,096                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 4 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   682                                                                          
+DataMove(AccToLocal)#1:   682                                                                          
+DataMove(DRAM0ToLocal)#0: 6,264                                                                        
+DataMove(DRAM0ToLocal)#1: 6,264                            682                                         
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToAcc)#0:   682                                                                          
+DataMove(LocalToAcc)#1:   682                                                                          
+DataMove(LocalToDRAM0)#0: 682                                                                          
+DataMove(LocalToDRAM0)#1:                                  682                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                  682                                         
+MatMul#1:                 682                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 4 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   605                                                                          
+DataMove(AccToLocal)#1:   605                                                                          
+DataMove(DRAM0ToLocal)#0: 3,079                                                                        
+DataMove(DRAM0ToLocal)#1: 5,554                            605                                         
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                  577                                         
+DataMove(LocalToAcc)#0:   605                                                                          
+DataMove(LocalToAcc)#1:   605                                                                          
+DataMove(LocalToDRAM0)#0: 605                                                                          
+DataMove(LocalToDRAM0)#1:                                  605                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                  74                                          
+MatMul#1:                 40                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 5 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                64
+Partition results size:                    234
+Partition accumulator size:                468
+Partition local size:                      8,171
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  1,415
+Partition average number of instructions:  1,227
+Execution latency (MCycles):               1.438
+Aggregate latency (MCycles):               1.438
+Execution energy (MUnits):                 101.530
+Aggregate energy (MUnits):                 101.530
+MAC efficiency (%):                        59.872
+Total number of instructions:              78,576
+Accumulator utilization (%):               22.852
+Local utilization (%):                     99.744
+True MACs (MMAC):                          55.083
+MAC efficiency (%):                        59.872
+--------------------------------------------------
+----------------------------------------
+LAYER 5 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+----------------------------------------
+MatMul:                 56,448 903,168
+DataMove(DRAM0ToLocal): 160    409,088
+DataMove(DRAM1ToLocal): 16     9,232
+DataMove(AccToLocal):   64     12,544
+SIMD:                   12,608 12,608
+DataMove(LocalToDRAM0): 64     12,544
+LoadWeights:            9,216  41,472
+TOTAL:                  78,576 1,400,656
+----------------------------------------
+---------------------------------------
+LAYER 5 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 940.032 KCycles
+DataMove(DRAM0ToLocal): 409.088 KCycles
+DataMove(DRAM1ToLocal): 9.232   KCycles
+DataMove(AccToLocal):   12.544  KCycles
+SIMD:                   12.608  KCycles
+DataMove(LocalToDRAM0): 12.544  KCycles
+LoadWeights:            41.472  KCycles
+TOTAL:                  1.438   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 5 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 57.803  MUnits
+DataMove(DRAM0ToLocal): 40.909  MUnits
+DataMove(DRAM1ToLocal): 923.200 KUnits
+DataMove(AccToLocal):   125.440 KUnits
+SIMD:                   100.864 KUnits
+DataMove(LocalToDRAM0): 1.254   MUnits
+LoadWeights:            414.720 KUnits
+TOTAL:                  101.530 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 5 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 160                                                                          
+DataMove(DRAM0ToLocal)#1: 160                                                                          
+DataMove(DRAM1ToLocal)#0: 16                                                                           
+DataMove(DRAM1ToLocal)#1:                                             16                               
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                             64                               
+LoadWeights#0:            4,672                                                                        
+MatMul#0:                 384                                         34,560                           
+MatMul#1:                 56,448                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 5 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   234                                                                          
+DataMove(AccToLocal)#1:   234                                                                          
+DataMove(DRAM0ToLocal)#0: 7,200                                                                        
+DataMove(DRAM0ToLocal)#1: 7,200                                                                        
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                             577                              
+DataMove(LocalToDRAM0)#0: 234                                                                          
+DataMove(LocalToDRAM0)#1:                                             234                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           28                               
+MatMul#1:                 29                                                                           
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 5 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   196                                                                          
+DataMove(AccToLocal)#1:   196                                                                          
+DataMove(DRAM0ToLocal)#0: 2,557                                                                        
+DataMove(DRAM0ToLocal)#1: 2,557                                                                        
+DataMove(DRAM1ToLocal)#0: 577                                                                          
+DataMove(DRAM1ToLocal)#1:                                             577                              
+DataMove(LocalToDRAM0)#0: 196                                                                          
+DataMove(LocalToDRAM0)#1:                                             196                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           25                               
+MatMul#1:                 16                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 6 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                48
+Partition results size:                    386
+Partition accumulator size:                386
+Partition local size:                      8,184
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  3,004
+Partition average number of instructions:  2,954
+Execution latency (MCycles):               2.198
+Aggregate latency (MCycles):               2.198
+Execution energy (MUnits):                 142.492
+Aggregate energy (MUnits):                 142.492
+MAC efficiency (%):                        78.322
+Total number of instructions:              141,852
+Accumulator utilization (%):               18.848
+Local utilization (%):                     99.902
+True MACs (MMAC):                          110.166
+MAC efficiency (%):                        78.322
+--------------------------------------------------
+-----------------------------------------
+LAYER 6 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 126,944 1,806,336
+DataMove(DRAM0ToLocal): 972     230,400
+DataMove(DRAM1ToLocal): 16      18,448
+DataMove(AccToLocal):   48      12,544
+DataMove(LocalToDRAM0): 48      12,544
+LoadWeights:            13,824  62,208
+TOTAL:                  141,852 2,142,480
+-----------------------------------------
+---------------------------------------
+LAYER 6 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.862   MCycles
+DataMove(DRAM0ToLocal): 230.400 KCycles
+DataMove(DRAM1ToLocal): 18.448  KCycles
+DataMove(AccToLocal):   12.544  KCycles
+DataMove(LocalToDRAM0): 12.544  KCycles
+LoadWeights:            62.208  KCycles
+TOTAL:                  2.198   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 6 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 23.040  MUnits
+DataMove(DRAM1ToLocal): 1.845   MUnits
+DataMove(AccToLocal):   125.440 KUnits
+DataMove(LocalToDRAM0): 1.254   MUnits
+LoadWeights:            622.080 KUnits
+TOTAL:                  142.492 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 6 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   48                                                                           
+DataMove(AccToLocal)#1:   48                                                                           
+DataMove(DRAM0ToLocal)#0: 972                                                                          
+DataMove(DRAM0ToLocal)#1: 972                                                                          
+DataMove(DRAM1ToLocal)#0: 16                                                                           
+DataMove(DRAM1ToLocal)#1:                                             16                               
+DataMove(LocalToDRAM0)#0: 48                                                                           
+DataMove(LocalToDRAM0)#1:                                             48                               
+LoadWeights#0:            6,960                                                                        
+MatMul#0:                 33,536                                      48,192     1,536      512        160
+MatMul#1:                 126,528    416                                                               
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 6 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   386                                                                          
+DataMove(AccToLocal)#1:   386                                                                          
+DataMove(DRAM0ToLocal)#0: 6,672                                                                        
+DataMove(DRAM0ToLocal)#1: 6,672                                                                        
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                             1,153                            
+DataMove(LocalToDRAM0)#0: 386                                                                          
+DataMove(LocalToDRAM0)#1:                                             386                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           386        15         2          2
+MatMul#1:                 386        2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 6 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   261                                                                          
+DataMove(AccToLocal)#1:   261                                                                          
+DataMove(DRAM0ToLocal)#0: 237                                                                          
+DataMove(DRAM0ToLocal)#1: 237                                                                          
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                             1,153                            
+DataMove(LocalToDRAM0)#0: 261                                                                          
+DataMove(LocalToDRAM0)#1:                                             261                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           35         13         2          2
+MatMul#1:                 14         2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 7 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                32
+Partition results size:                    682
+Partition accumulator size:                2,046
+Partition local size:                      6,885
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  2,075
+Partition average number of instructions:  1,205
+Execution latency (KCycles):               281.392
+Aggregate latency (KCycles):               281.392
+Execution energy (MUnits):                 19.545
+Aggregate energy (MUnits):                 19.545
+MAC efficiency (%):                        35.663
+Total number of instructions:              38,576
+Accumulator utilization (%):               99.902
+Local utilization (%):                     84.045
+True MACs (MMAC):                          6.423
+MAC efficiency (%):                        35.663
+--------------------------------------------------
+--------------------------------------
+LAYER 7 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+--------------------------------------
+MatMul:                 256    100,352
+DataMove(DRAM0ToLocal): 12,576 112,896
+DataMove(DRAM1ToLocal): 16     1,040
+DataMove(AccToLocal):   32     12,544
+DataMove(LocalToAcc):   32     12,544
+SIMD:                   25,120 25,120
+DataMove(LocalToDRAM0): 32     12,544
+LoadWeights:            512    2,304
+TOTAL:                  38,576 279,344
+--------------------------------------
+---------------------------------------
+LAYER 7 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 102.400 KCycles
+DataMove(DRAM0ToLocal): 112.896 KCycles
+DataMove(DRAM1ToLocal): 1.040   KCycles
+DataMove(AccToLocal):   12.544  KCycles
+DataMove(LocalToAcc):   12.544  KCycles
+SIMD:                   25.120  KCycles
+DataMove(LocalToDRAM0): 12.544  KCycles
+LoadWeights:            2.304   KCycles
+TOTAL:                  281.392 KCycles
+---------------------------------------
+--------------------------------------
+LAYER 7 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 6.423   MUnits
+DataMove(DRAM0ToLocal): 11.290  MUnits
+DataMove(DRAM1ToLocal): 104.000 KUnits
+DataMove(AccToLocal):   125.440 KUnits
+DataMove(LocalToAcc):   125.440 KUnits
+SIMD:                   200.960 KUnits
+DataMove(LocalToDRAM0): 1.254   MUnits
+LoadWeights:            23.040  KUnits
+TOTAL:                  19.545  MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 7 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   32                                                                           
+DataMove(AccToLocal)#1:   32                                                                           
+DataMove(DRAM0ToLocal)#0: 12,576                                                                       
+DataMove(DRAM0ToLocal)#1: 12,544                                      32                               
+DataMove(DRAM1ToLocal)#0: 16                                                                           
+DataMove(DRAM1ToLocal)#1:                                             16                               
+DataMove(LocalToAcc)#0:   32                                                                           
+DataMove(LocalToAcc)#1:   32                                                                           
+DataMove(LocalToDRAM0)#0: 32                                                                           
+DataMove(LocalToDRAM0)#1:                                             32                               
+LoadWeights#0:            288                                                                          
+MatMul#0:                                                  256                                         
+MatMul#1:                 256                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 7 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   682                                                                          
+DataMove(AccToLocal)#1:   682                                                                          
+DataMove(DRAM0ToLocal)#0: 682                                                                          
+DataMove(DRAM0ToLocal)#1: 8                                           682                              
+DataMove(DRAM1ToLocal)#0: 65                                                                           
+DataMove(DRAM1ToLocal)#1:                                             65                               
+DataMove(LocalToAcc)#0:   682                                                                          
+DataMove(LocalToAcc)#1:   682                                                                          
+DataMove(LocalToDRAM0)#0: 682                                                                          
+DataMove(LocalToDRAM0)#1:                                             682                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                  682                                         
+MatMul#1:                 682                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 7 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   392                                                                          
+DataMove(AccToLocal)#1:   392                                                                          
+DataMove(DRAM0ToLocal)#0: 9                                                                            
+DataMove(DRAM0ToLocal)#1: 8                                           392                              
+DataMove(DRAM1ToLocal)#0: 65                                                                           
+DataMove(DRAM1ToLocal)#1:                                             65                               
+DataMove(LocalToAcc)#0:   392                                                                          
+DataMove(LocalToAcc)#1:   392                                                                          
+DataMove(LocalToDRAM0)#0: 392                                                                          
+DataMove(LocalToDRAM0)#1:                                             392                              
+LoadWeights#0:            7                                                                            
+MatMul#0:                                                  392                                         
+MatMul#1:                 392                                                                          
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 8 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                48
+Partition results size:                    386
+Partition accumulator size:                772
+Partition local size:                      8,184
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  3,334
+Partition average number of instructions:  3,217
+Execution latency (MCycles):               2.210
+Aggregate latency (MCycles):               2.210
+Execution energy (MUnits):                 142.593
+Aggregate energy (MUnits):                 142.593
+MAC efficiency (%):                        77.876
+Total number of instructions:              154,444
+Accumulator utilization (%):               37.695
+Local utilization (%):                     99.902
+True MACs (MMAC):                          110.166
+MAC efficiency (%):                        77.876
+--------------------------------------------------
+-----------------------------------------
+LAYER 8 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 126,944 1,806,336
+DataMove(DRAM0ToLocal): 972     230,400
+DataMove(DRAM1ToLocal): 16      18,448
+DataMove(AccToLocal):   48      12,544
+SIMD:                   12,592  12,592
+DataMove(LocalToDRAM0): 48      12,544
+LoadWeights:            13,824  62,208
+TOTAL:                  154,444 2,155,072
+-----------------------------------------
+---------------------------------------
+LAYER 8 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.862   MCycles
+DataMove(DRAM0ToLocal): 230.400 KCycles
+DataMove(DRAM1ToLocal): 18.448  KCycles
+DataMove(AccToLocal):   12.544  KCycles
+SIMD:                   12.592  KCycles
+DataMove(LocalToDRAM0): 12.544  KCycles
+LoadWeights:            62.208  KCycles
+TOTAL:                  2.210   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 8 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 23.040  MUnits
+DataMove(DRAM1ToLocal): 1.845   MUnits
+DataMove(AccToLocal):   125.440 KUnits
+SIMD:                   100.736 KUnits
+DataMove(LocalToDRAM0): 1.254   MUnits
+LoadWeights:            622.080 KUnits
+TOTAL:                  142.593 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 8 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   48                                                                           
+DataMove(AccToLocal)#1:   48                                                                           
+DataMove(DRAM0ToLocal)#0: 972                                                                          
+DataMove(DRAM0ToLocal)#1: 972                                                                          
+DataMove(DRAM1ToLocal)#0: 16                                                                           
+DataMove(DRAM1ToLocal)#1:                                             16                               
+DataMove(LocalToDRAM0)#0: 48                                                                           
+DataMove(LocalToDRAM0)#1:                                             48                               
+LoadWeights#0:            6,960                                                                        
+MatMul#0:                 33,536                                      48,192     1,536      512        160
+MatMul#1:                 126,528    416                                                               
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 8 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   386                                                                          
+DataMove(AccToLocal)#1:   386                                                                          
+DataMove(DRAM0ToLocal)#0: 6,672                                                                        
+DataMove(DRAM0ToLocal)#1: 6,672                                                                        
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                             1,153                            
+DataMove(LocalToDRAM0)#0: 386                                                                          
+DataMove(LocalToDRAM0)#1:                                             386                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           386        15         2          2
+MatMul#1:                 386        2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 8 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   261                                                                          
+DataMove(AccToLocal)#1:   261                                                                          
+DataMove(DRAM0ToLocal)#0: 237                                                                          
+DataMove(DRAM0ToLocal)#1: 237                                                                          
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                             1,153                            
+DataMove(LocalToDRAM0)#0: 261                                                                          
+DataMove(LocalToDRAM0)#1:                                             261                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           35         13         2          2
+MatMul#1:                 14         2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 9 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                48
+Partition results size:                    365
+Partition accumulator size:                1,095
+Partition local size:                      8,187
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  3,632
+Partition average number of instructions:  2,683
+Execution latency (MCycles):               2.248
+Aggregate latency (MCycles):               2.248
+Execution energy (MUnits):                 144.073
+Aggregate energy (MUnits):                 144.073
+MAC efficiency (%):                        76.572
+Total number of instructions:              128,816
+Accumulator utilization (%):               53.467
+Local utilization (%):                     99.939
+True MACs (MMAC):                          110.166
+MAC efficiency (%):                        76.572
+--------------------------------------------------
+-----------------------------------------
+LAYER 9 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 89,600  1,806,336
+DataMove(DRAM0ToLocal): 96      242,944
+DataMove(DRAM1ToLocal): 16      18,448
+DataMove(AccToLocal):   48      12,544
+DataMove(LocalToAcc):   48      12,544
+SIMD:                   25,136  25,136
+DataMove(LocalToDRAM0): 48      12,544
+LoadWeights:            13,824  62,208
+TOTAL:                  128,816 2,192,704
+-----------------------------------------
+---------------------------------------
+LAYER 9 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.862   MCycles
+DataMove(DRAM0ToLocal): 242.944 KCycles
+DataMove(DRAM1ToLocal): 18.448  KCycles
+DataMove(AccToLocal):   12.544  KCycles
+DataMove(LocalToAcc):   12.544  KCycles
+SIMD:                   25.136  KCycles
+DataMove(LocalToDRAM0): 12.544  KCycles
+LoadWeights:            62.208  KCycles
+TOTAL:                  2.248   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 9 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 24.294  MUnits
+DataMove(DRAM1ToLocal): 1.845   MUnits
+DataMove(AccToLocal):   125.440 KUnits
+DataMove(LocalToAcc):   125.440 KUnits
+SIMD:                   201.088 KUnits
+DataMove(LocalToDRAM0): 1.254   MUnits
+LoadWeights:            622.080 KUnits
+TOTAL:                  144.073 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 9 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   48                                                                           
+DataMove(AccToLocal)#1:   48                                                                           
+DataMove(DRAM0ToLocal)#0: 96                                                                           
+DataMove(DRAM0ToLocal)#1: 48                                          48                               
+DataMove(DRAM1ToLocal)#0: 16                                                                           
+DataMove(DRAM1ToLocal)#1:                                             16                               
+DataMove(LocalToAcc)#0:   48                                                                           
+DataMove(LocalToAcc)#1:   48                                                                           
+DataMove(LocalToDRAM0)#0: 48                                                                           
+DataMove(LocalToDRAM0)#1:                                             48                               
+LoadWeights#0:            6,960                                                                        
+MatMul#0:                 768                                         45,824                           
+MatMul#1:                 89,600                                                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 9 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   365                                                                          
+DataMove(AccToLocal)#1:   365                                                                          
+DataMove(DRAM0ToLocal)#0: 6,352                                                                        
+DataMove(DRAM0ToLocal)#1: 6,352                                       365                              
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                             1,153                            
+DataMove(LocalToAcc)#0:   365                                                                          
+DataMove(LocalToAcc)#1:   365                                                                          
+DataMove(LocalToDRAM0)#0: 365                                                                          
+DataMove(LocalToDRAM0)#1:                                             365                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           365                              
+MatMul#1:                 365                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 9 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   261                                                                          
+DataMove(AccToLocal)#1:   261                                                                          
+DataMove(DRAM0ToLocal)#0: 2,531                                                                        
+DataMove(DRAM0ToLocal)#1: 4,800                                       261                              
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                             1,153                            
+DataMove(LocalToAcc)#0:   261                                                                          
+DataMove(LocalToAcc)#1:   261                                                                          
+DataMove(LocalToDRAM0)#0: 261                                                                          
+DataMove(LocalToDRAM0)#1:                                             261                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                           38                               
+MatMul#1:                 20                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 10 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    32
+Partitions:                                64
+Partition results size:                    108
+Partition accumulator size:                216
+Partition local size:                      8,173
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  3,636
+Partition average number of instructions:  2,554
+Execution latency (MCycles):               1.532
+Aggregate latency (MCycles):               1.532
+Execution energy (MUnits):                 104.739
+Aggregate energy (MUnits):                 104.739
+MAC efficiency (%):                        56.166
+Total number of instructions:              163,488
+Accumulator utilization (%):               10.547
+Local utilization (%):                     99.768
+True MACs (MMAC):                          55.083
+MAC efficiency (%):                        56.166
+--------------------------------------------------
+-----------------------------------------
+LAYER 10 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 125,952 903,168
+DataMove(DRAM0ToLocal): 12,608  416,768
+DataMove(DRAM1ToLocal): 32      36,896
+DataMove(AccToLocal):   64      6,272
+SIMD:                   6,336   6,336
+DataMove(LocalToDRAM0): 64      6,272
+LoadWeights:            18,432  82,944
+TOTAL:                  163,488 1,458,656
+-----------------------------------------
+---------------------------------------
+LAYER 10 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 976.896 KCycles
+DataMove(DRAM0ToLocal): 416.768 KCycles
+DataMove(DRAM1ToLocal): 36.896  KCycles
+DataMove(AccToLocal):   6.272   KCycles
+SIMD:                   6.336   KCycles
+DataMove(LocalToDRAM0): 6.272   KCycles
+LoadWeights:            82.944  KCycles
+TOTAL:                  1.532   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 10 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 57.803  MUnits
+DataMove(DRAM0ToLocal): 41.677  MUnits
+DataMove(DRAM1ToLocal): 3.690   MUnits
+DataMove(AccToLocal):   62.720  KUnits
+SIMD:                   50.688  KUnits
+DataMove(LocalToDRAM0): 627.200 KUnits
+LoadWeights:            829.440 KUnits
+TOTAL:                  104.739 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 10 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 12,608                                                                       
+DataMove(DRAM0ToLocal)#1: 12,608                                                                       
+DataMove(DRAM1ToLocal)#0: 32                                                                           
+DataMove(DRAM1ToLocal)#1:                                                        32                    
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                        64                    
+LoadWeights#0:            9,280                                                                        
+MatMul#0:                 73,728                                                 2,560      26,624     1,024
+MatMul#1:                 125,952                                                                      
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 10 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   108                                                                          
+DataMove(AccToLocal)#1:   108                                                                          
+DataMove(DRAM0ToLocal)#0: 64                                                                           
+DataMove(DRAM0ToLocal)#1: 64                                                                           
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        1,153                 
+DataMove(LocalToDRAM0)#0: 108                                                                          
+DataMove(LocalToDRAM0)#1:                                                        108                   
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      2          108        2
+MatMul#1:                 108                                                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 10 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   98                                                                           
+DataMove(AccToLocal)#1:   98                                                                           
+DataMove(DRAM0ToLocal)#0: 33                                                                           
+DataMove(DRAM0ToLocal)#1: 33                                                                           
+DataMove(DRAM1ToLocal)#0: 1,153                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        1,153                 
+DataMove(LocalToDRAM0)#0: 98                                                                           
+DataMove(LocalToDRAM0)#1:                                                        98                    
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      2          29         2
+MatMul#1:                 7                                                                            
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 11 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    32
+Partitions:                                64
+Partition results size:                    163
+Partition accumulator size:                163
+Partition local size:                      8,164
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  14,185
+Partition average number of instructions:  10,165
+Execution latency (MCycles):               2.437
+Aggregate latency (MCycles):               2.437
+Execution energy (MUnits):                 148.473
+Aggregate energy (MUnits):                 148.473
+MAC efficiency (%):                        67.219
+Total number of instructions:              650,604
+Accumulator utilization (%):               7.959
+Local utilization (%):                     99.658
+True MACs (MMAC):                          104.858
+MAC efficiency (%):                        67.219
+--------------------------------------------------
+-----------------------------------------
+LAYER 11 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 611,328 1,806,336
+DataMove(DRAM0ToLocal): 2,252   231,424
+DataMove(DRAM1ToLocal): 32      73,760
+DataMove(AccToLocal):   64      6,272
+DataMove(LocalToDRAM0): 64      6,272
+LoadWeights:            36,864  165,888
+TOTAL:                  650,604 2,289,952
+-----------------------------------------
+---------------------------------------
+LAYER 11 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.954   MCycles
+DataMove(DRAM0ToLocal): 231.424 KCycles
+DataMove(DRAM1ToLocal): 73.760  KCycles
+DataMove(AccToLocal):   6.272   KCycles
+DataMove(LocalToDRAM0): 6.272   KCycles
+LoadWeights:            165.888 KCycles
+TOTAL:                  2.437   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 11 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 23.142  MUnits
+DataMove(DRAM1ToLocal): 7.376   MUnits
+DataMove(AccToLocal):   62.720  KUnits
+DataMove(LocalToDRAM0): 627.200 KUnits
+LoadWeights:            1.659   MUnits
+TOTAL:                  148.473 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 11 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 2,252                                                                        
+DataMove(DRAM0ToLocal)#1: 2,252                                                                        
+DataMove(DRAM1ToLocal)#0: 32                                                                           
+DataMove(DRAM1ToLocal)#1:                                                        32                    
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                        64                    
+LoadWeights#0:            18,496                                                                       
+MatMul#0:                 403,264                                                108,256    3,168      10,624
+MatMul#1:                 604,160    7,168                                                             
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 11 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   163                                                                          
+DataMove(AccToLocal)#1:   163                                                                          
+DataMove(DRAM0ToLocal)#0: 4,384                                                                        
+DataMove(DRAM0ToLocal)#1: 4,384                                                                        
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        2,305                 
+DataMove(LocalToDRAM0)#0: 163                                                                          
+DataMove(LocalToDRAM0)#1:                                                        163                   
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      136        2          2
+MatMul#1:                 136        2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 11 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   98                                                                           
+DataMove(AccToLocal)#1:   98                                                                           
+DataMove(DRAM0ToLocal)#0: 103                                                                          
+DataMove(DRAM0ToLocal)#1: 103                                                                          
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        2,305                 
+DataMove(LocalToDRAM0)#0: 98                                                                           
+DataMove(LocalToDRAM0)#1:                                                        98                    
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      11         2          2
+MatMul#1:                 3          2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 12 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                16
+Partition results size:                    392
+Partition accumulator size:                1,176
+Partition local size:                      4,178
+Stage init maximum number of instructions: 2
+Stage init average number of instructions: 2
+Partition maximum number of instructions:  1,081
+Partition average number of instructions:  1,081
+Execution latency (KCycles):               201.008
+Aggregate latency (KCycles):               201.008
+Execution energy (MUnits):                 13.379
+Aggregate energy (MUnits):                 13.379
+MAC efficiency (%):                        49.924
+Total number of instructions:              17,328
+Accumulator utilization (%):               57.422
+Local utilization (%):                     51.001
+True MACs (MMAC):                          6.423
+MAC efficiency (%):                        49.924
+--------------------------------------------------
+--------------------------------------
+LAYER 12 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+--------------------------------------
+MatMul:                 512    100,352
+DataMove(DRAM0ToLocal): 3,152  56,448
+DataMove(DRAM1ToLocal): 32     4,128
+DataMove(AccToLocal):   16     6,272
+DataMove(LocalToAcc):   16     6,272
+SIMD:                   12,560 12,560
+DataMove(LocalToDRAM0): 16     6,272
+LoadWeights:            1,024  4,608
+TOTAL:                  17,328 196,912
+--------------------------------------
+---------------------------------------
+LAYER 12 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 104.448 KCycles
+DataMove(DRAM0ToLocal): 56.448  KCycles
+DataMove(DRAM1ToLocal): 4.128   KCycles
+DataMove(AccToLocal):   6.272   KCycles
+DataMove(LocalToAcc):   6.272   KCycles
+SIMD:                   12.560  KCycles
+DataMove(LocalToDRAM0): 6.272   KCycles
+LoadWeights:            4.608   KCycles
+TOTAL:                  201.008 KCycles
+---------------------------------------
+--------------------------------------
+LAYER 12 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 6.423   MUnits
+DataMove(DRAM0ToLocal): 5.645   MUnits
+DataMove(DRAM1ToLocal): 412.800 KUnits
+DataMove(AccToLocal):   62.720  KUnits
+DataMove(LocalToAcc):   62.720  KUnits
+SIMD:                   100.480 KUnits
+DataMove(LocalToDRAM0): 627.200 KUnits
+LoadWeights:            46.080  KUnits
+TOTAL:                  13.379  MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 12 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   16                                                                           
+DataMove(AccToLocal)#1:   16                                                                           
+DataMove(DRAM0ToLocal)#0: 3,152                                                                        
+DataMove(DRAM0ToLocal)#1: 3,136                                       16                               
+DataMove(DRAM1ToLocal)#0: 32                                                                           
+DataMove(DRAM1ToLocal)#1:                                                        32                    
+DataMove(LocalToAcc)#0:   16                                                                           
+DataMove(LocalToAcc)#1:   16                                                                           
+DataMove(LocalToDRAM0)#0: 16                                                                           
+DataMove(LocalToDRAM0)#1:                                             16                               
+LoadWeights#0:            544                                                                          
+MatMul#0:                                                             512                              
+MatMul#1:                            512                                                               
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 12 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   392                                                                          
+DataMove(AccToLocal)#1:   392                                                                          
+DataMove(DRAM0ToLocal)#0: 392                                                                          
+DataMove(DRAM0ToLocal)#1: 16                                          392                              
+DataMove(DRAM1ToLocal)#0: 129                                                                          
+DataMove(DRAM1ToLocal)#1:                                                        129                   
+DataMove(LocalToAcc)#0:   392                                                                          
+DataMove(LocalToAcc)#1:   392                                                                          
+DataMove(LocalToDRAM0)#0: 392                                                                          
+DataMove(LocalToDRAM0)#1:                                             392                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                             196                              
+MatMul#1:                            196                                                               
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 12 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   392                                                                          
+DataMove(AccToLocal)#1:   392                                                                          
+DataMove(DRAM0ToLocal)#0: 18                                                                           
+DataMove(DRAM0ToLocal)#1: 16                                          392                              
+DataMove(DRAM1ToLocal)#0: 129                                                                          
+DataMove(DRAM1ToLocal)#1:                                                        129                   
+DataMove(LocalToAcc)#0:   392                                                                          
+DataMove(LocalToAcc)#1:   392                                                                          
+DataMove(LocalToDRAM0)#0: 392                                                                          
+DataMove(LocalToDRAM0)#1:                                             392                              
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                             196                              
+MatMul#1:                            196                                                               
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 13 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    32
+Partitions:                                64
+Partition results size:                    163
+Partition accumulator size:                326
+Partition local size:                      8,164
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  14,349
+Partition average number of instructions:  10,238
+Execution latency (MCycles):               2.444
+Aggregate latency (MCycles):               2.444
+Execution energy (MUnits):                 148.523
+Aggregate energy (MUnits):                 148.523
+MAC efficiency (%):                        67.045
+Total number of instructions:              655,301
+Accumulator utilization (%):               15.918
+Local utilization (%):                     99.658
+True MACs (MMAC):                          104.858
+MAC efficiency (%):                        67.045
+--------------------------------------------------
+-----------------------------------------
+LAYER 13 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 609,696 1,806,336
+DataMove(DRAM0ToLocal): 2,245   231,424
+DataMove(DRAM1ToLocal): 32      73,760
+DataMove(AccToLocal):   64      6,272
+SIMD:                   6,336   6,336
+DataMove(LocalToDRAM0): 64      6,272
+LoadWeights:            36,864  165,888
+TOTAL:                  655,301 2,296,288
+-----------------------------------------
+---------------------------------------
+LAYER 13 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.954   MCycles
+DataMove(DRAM0ToLocal): 231.424 KCycles
+DataMove(DRAM1ToLocal): 73.760  KCycles
+DataMove(AccToLocal):   6.272   KCycles
+SIMD:                   6.336   KCycles
+DataMove(LocalToDRAM0): 6.272   KCycles
+LoadWeights:            165.888 KCycles
+TOTAL:                  2.444   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 13 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 23.142  MUnits
+DataMove(DRAM1ToLocal): 7.376   MUnits
+DataMove(AccToLocal):   62.720  KUnits
+SIMD:                   50.688  KUnits
+DataMove(LocalToDRAM0): 627.200 KUnits
+LoadWeights:            1.659   MUnits
+TOTAL:                  148.523 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 13 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 2,245                                                                        
+DataMove(DRAM0ToLocal)#1: 2,245                                                                        
+DataMove(DRAM1ToLocal)#0: 32                                                                           
+DataMove(DRAM1ToLocal)#1:                                                        32                    
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                        64                    
+LoadWeights#0:            18,496                                                                       
+MatMul#0:                 401,216                                                108,864    3,264      10,336
+MatMul#1:                 602,528    7,168                                                             
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 13 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   163                                                                          
+DataMove(AccToLocal)#1:   163                                                                          
+DataMove(DRAM0ToLocal)#0: 4,384                                                                        
+DataMove(DRAM0ToLocal)#1: 4,384                                                                        
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        2,305                 
+DataMove(LocalToDRAM0)#0: 163                                                                          
+DataMove(LocalToDRAM0)#1:                                                        163                   
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      136        2          2
+MatMul#1:                 136        2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 13 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   98                                                                           
+DataMove(AccToLocal)#1:   98                                                                           
+DataMove(DRAM0ToLocal)#0: 103                                                                          
+DataMove(DRAM0ToLocal)#1: 103                                                                          
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        2,305                 
+DataMove(LocalToDRAM0)#0: 98                                                                           
+DataMove(LocalToDRAM0)#1:                                                        98                    
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      11         2          2
+MatMul#1:                 3          2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 14 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    32
+Partitions:                                64
+Partition results size:                    159
+Partition accumulator size:                477
+Partition local size:                      8,191
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  6,864
+Partition average number of instructions:  6,113
+Execution latency (MCycles):               2.463
+Aggregate latency (MCycles):               2.463
+Execution energy (MUnits):                 149.263
+Aggregate energy (MUnits):                 149.263
+MAC efficiency (%):                        66.532
+Total number of instructions:              391,304
+Accumulator utilization (%):               23.291
+Local utilization (%):                     99.988
+True MACs (MMAC):                          104.858
+MAC efficiency (%):                        66.532
+--------------------------------------------------
+-----------------------------------------
+LAYER 14 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 340,480 1,806,336
+DataMove(DRAM0ToLocal): 1,128   237,696
+DataMove(DRAM1ToLocal): 32      73,760
+DataMove(AccToLocal):   64      6,272
+DataMove(LocalToAcc):   64      6,272
+SIMD:                   12,608  12,608
+DataMove(LocalToDRAM0): 64      6,272
+LoadWeights:            36,864  165,888
+TOTAL:                  391,304 2,315,104
+-----------------------------------------
+---------------------------------------
+LAYER 14 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.954   MCycles
+DataMove(DRAM0ToLocal): 237.696 KCycles
+DataMove(DRAM1ToLocal): 73.760  KCycles
+DataMove(AccToLocal):   6.272   KCycles
+DataMove(LocalToAcc):   6.272   KCycles
+SIMD:                   12.608  KCycles
+DataMove(LocalToDRAM0): 6.272   KCycles
+LoadWeights:            165.888 KCycles
+TOTAL:                  2.463   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 14 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 23.770  MUnits
+DataMove(DRAM1ToLocal): 7.376   MUnits
+DataMove(AccToLocal):   62.720  KUnits
+DataMove(LocalToAcc):   62.720  KUnits
+SIMD:                   100.864 KUnits
+DataMove(LocalToDRAM0): 627.200 KUnits
+LoadWeights:            1.659   MUnits
+TOTAL:                  149.263 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 14 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 1,128                                                                        
+DataMove(DRAM0ToLocal)#1: 1,064                                                  64                    
+DataMove(DRAM1ToLocal)#0: 32                                                                           
+DataMove(DRAM1ToLocal)#1:                                                        32                    
+DataMove(LocalToAcc)#0:   64                                                                           
+DataMove(LocalToAcc)#1:   64                                                                           
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                        64                    
+LoadWeights#0:            18,496                                                                       
+MatMul#0:                 142,848                                                105,984               5,632
+MatMul#1:                 339,456    1,024                                                             
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 14 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   159                                                                          
+DataMove(AccToLocal)#1:   159                                                                          
+DataMove(DRAM0ToLocal)#0: 5,568                                                                        
+DataMove(DRAM0ToLocal)#1: 5,568                                                  159                   
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        2,305                 
+DataMove(LocalToAcc)#0:   159                                                                          
+DataMove(LocalToAcc)#1:   159                                                                          
+DataMove(LocalToDRAM0)#0: 159                                                                          
+DataMove(LocalToDRAM0)#1:                                                        159                   
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      159                   2
+MatMul#1:                 159        2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 14 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   98                                                                           
+DataMove(AccToLocal)#1:   98                                                                           
+DataMove(DRAM0ToLocal)#0: 211                                                                          
+DataMove(DRAM0ToLocal)#1: 218                                                    98                    
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                        2,305                 
+DataMove(LocalToAcc)#0:   98                                                                           
+DataMove(LocalToAcc)#1:   98                                                                           
+DataMove(LocalToDRAM0)#0: 98                                                                           
+DataMove(LocalToDRAM0)#1:                                                        98                    
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                      14                    2
+MatMul#1:                 5          2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 15 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    64
+Partitions:                                128
+Partition results size:                    45
+Partition accumulator size:                90
+Partition local size:                      8,110
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  2,244
+Partition average number of instructions:  1,947
+Execution latency (MCycles):               2.111
+Aggregate latency (MCycles):               2.111
+Execution energy (MUnits):                 118.637
+Aggregate energy (MUnits):                 118.637
+MAC efficiency (%):                        38.809
+Total number of instructions:              249,344
+Accumulator utilization (%):               4.395
+Local utilization (%):                     98.999
+True MACs (MMAC):                          52.429
+MAC efficiency (%):                        38.809
+--------------------------------------------------
+-----------------------------------------
+LAYER 15 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 165,888 903,168
+DataMove(DRAM0ToLocal): 6,144   423,936
+DataMove(DRAM1ToLocal): 64      147,520
+DataMove(AccToLocal):   128     3,136
+SIMD:                   3,264   3,264
+DataMove(LocalToDRAM0): 128     3,136
+LoadWeights:            73,728  331,776
+TOTAL:                  249,344 1,815,936
+-----------------------------------------
+---------------------------------------
+LAYER 15 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 1.198   MCycles
+DataMove(DRAM0ToLocal): 423.936 KCycles
+DataMove(DRAM1ToLocal): 147.520 KCycles
+DataMove(AccToLocal):   3.136   KCycles
+SIMD:                   3.264   KCycles
+DataMove(LocalToDRAM0): 3.136   KCycles
+LoadWeights:            331.776 KCycles
+TOTAL:                  2.111   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 15 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 57.803  MUnits
+DataMove(DRAM0ToLocal): 42.394  MUnits
+DataMove(DRAM1ToLocal): 14.752  MUnits
+DataMove(AccToLocal):   31.360  KUnits
+SIMD:                   26.112  KUnits
+DataMove(LocalToDRAM0): 313.600 KUnits
+LoadWeights:            3.318   MUnits
+TOTAL:                  118.637 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 15 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   128                                                                          
+DataMove(AccToLocal)#1:   128                                                                          
+DataMove(DRAM0ToLocal)#0: 6,144                                                                        
+DataMove(DRAM0ToLocal)#1: 6,144                                                                        
+DataMove(DRAM1ToLocal)#0: 64                                                                           
+DataMove(DRAM1ToLocal)#1:                                                                   64         
+DataMove(LocalToDRAM0)#0: 128                                                                          
+DataMove(LocalToDRAM0)#1:                                                                   128        
+LoadWeights#0:            36,992                                                                       
+MatMul#0:                 61,440                                                            6,144      53,248
+MatMul#1:                 165,888                                                                      
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 15 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   45                                                                           
+DataMove(AccToLocal)#1:   45                                                                           
+DataMove(DRAM0ToLocal)#0: 128                                                                          
+DataMove(DRAM0ToLocal)#1: 128                                                                          
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   2,305      
+DataMove(LocalToDRAM0)#0: 45                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   45         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 2          45
+MatMul#1:                 45                                                                           
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 15 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   25                                                                           
+DataMove(AccToLocal)#1:   25                                                                           
+DataMove(DRAM0ToLocal)#0: 69                                                                           
+DataMove(DRAM0ToLocal)#1: 69                                                                           
+DataMove(DRAM1ToLocal)#0: 2,305                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   2,305      
+DataMove(LocalToDRAM0)#0: 25                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   25         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 2          14
+MatMul#1:                 5                                                                            
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 16 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    64
+Partitions:                                64
+Partition results size:                    49
+Partition accumulator size:                49
+Partition local size:                      7,794
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  13,972
+Partition average number of instructions:  13,130
+Execution latency (MCycles):               2.935
+Aggregate latency (MCycles):               2.935
+Execution energy (MUnits):                 168.836
+Aggregate energy (MUnits):                 168.836
+MAC efficiency (%):                        50.381
+Total number of instructions:              840,407
+Accumulator utilization (%):               2.393
+Local utilization (%):                     95.142
+True MACs (MMAC):                          94.634
+MAC efficiency (%):                        50.381
+--------------------------------------------------
+-----------------------------------------
+LAYER 16 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 765,440 1,806,336
+DataMove(DRAM0ToLocal): 1,047   200,704
+DataMove(DRAM1ToLocal): 64      294,976
+DataMove(AccToLocal):   64      3,136
+DataMove(LocalToDRAM0): 64      3,136
+LoadWeights:            73,728  331,776
+TOTAL:                  840,407 2,640,064
+-----------------------------------------
+---------------------------------------
+LAYER 16 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 2.101   MCycles
+DataMove(DRAM0ToLocal): 200.704 KCycles
+DataMove(DRAM1ToLocal): 294.976 KCycles
+DataMove(AccToLocal):   3.136   KCycles
+DataMove(LocalToDRAM0): 3.136   KCycles
+LoadWeights:            331.776 KCycles
+TOTAL:                  2.935   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 16 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 20.070  MUnits
+DataMove(DRAM1ToLocal): 29.498  MUnits
+DataMove(AccToLocal):   31.360  KUnits
+DataMove(LocalToDRAM0): 313.600 KUnits
+LoadWeights:            3.318   MUnits
+TOTAL:                  168.836 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 16 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 1,047                                                                        
+DataMove(DRAM0ToLocal)#1: 1,047                                                                        
+DataMove(DRAM1ToLocal)#0: 64                                                                           
+DataMove(DRAM1ToLocal)#1:                                                                   64         
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   64         
+LoadWeights#0:            36,928                                                                       
+MatMul#0:                 395,264                                                           185,856    12,288
+MatMul#1:                 753,152    12,288                                                            
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 16 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   49                                                                           
+DataMove(AccToLocal)#1:   49                                                                           
+DataMove(DRAM0ToLocal)#0: 1,856                                                                        
+DataMove(DRAM0ToLocal)#1: 1,856                                                                        
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   4,609      
+DataMove(LocalToDRAM0)#0: 49                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   49         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 29         2
+MatMul#1:                 29         2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 16 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   49                                                                           
+DataMove(AccToLocal)#1:   49                                                                           
+DataMove(DRAM0ToLocal)#0: 192                                                                          
+DataMove(DRAM0ToLocal)#1: 192                                                                          
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   4,609      
+DataMove(LocalToDRAM0)#0: 49                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   49         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 6          2
+MatMul#1:                 2          2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 17 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    8
+Partitions:                                8
+Partition results size:                    392
+Partition accumulator size:                1,176
+Partition local size:                      4,408
+Stage init maximum number of instructions: 8
+Stage init average number of instructions: 8
+Partition maximum number of instructions:  1,606
+Partition average number of instructions:  1,606
+Execution latency (KCycles):               182.984
+Aggregate latency (KCycles):               182.984
+Execution energy (MUnits):                 10.246
+Aggregate energy (MUnits):                 10.246
+MAC efficiency (%):                        54.842
+Total number of instructions:              12,912
+Accumulator utilization (%):               57.422
+Local utilization (%):                     53.809
+True MACs (MMAC):                          6.423
+MAC efficiency (%):                        54.842
+--------------------------------------------------
+--------------------------------------
+LAYER 17 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+--------------------------------------
+MatMul:                 2,048  100,352
+DataMove(DRAM0ToLocal): 400    15,680
+DataMove(DRAM1ToLocal): 64     16,448
+DataMove(AccToLocal):   8      3,136
+DataMove(LocalToAcc):   8      3,136
+SIMD:                   6,280  6,280
+DataMove(LocalToDRAM0): 8      3,136
+LoadWeights:            4,096  18,432
+TOTAL:                  12,912 166,600
+--------------------------------------
+---------------------------------------
+LAYER 17 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 116.736 KCycles
+DataMove(DRAM0ToLocal): 15.680  KCycles
+DataMove(DRAM1ToLocal): 16.448  KCycles
+DataMove(AccToLocal):   3.136   KCycles
+DataMove(LocalToAcc):   3.136   KCycles
+SIMD:                   6.280   KCycles
+DataMove(LocalToDRAM0): 3.136   KCycles
+LoadWeights:            18.432  KCycles
+TOTAL:                  182.984 KCycles
+---------------------------------------
+--------------------------------------
+LAYER 17 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 6.423   MUnits
+DataMove(DRAM0ToLocal): 1.568   MUnits
+DataMove(DRAM1ToLocal): 1.645   MUnits
+DataMove(AccToLocal):   31.360  KUnits
+DataMove(LocalToAcc):   31.360  KUnits
+SIMD:                   50.240  KUnits
+DataMove(LocalToDRAM0): 313.600 KUnits
+LoadWeights:            184.320 KUnits
+TOTAL:                  10.246  MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 17 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   8                                                                            
+DataMove(AccToLocal)#1:   8                                                                            
+DataMove(DRAM0ToLocal)#0: 400                                                                          
+DataMove(DRAM0ToLocal)#1: 392                              8                                           
+DataMove(DRAM1ToLocal)#0: 64                                                                           
+DataMove(DRAM1ToLocal)#1:                                                                   64         
+DataMove(LocalToAcc)#0:   8                                                                            
+DataMove(LocalToAcc)#1:   8                                                                            
+DataMove(LocalToDRAM0)#0: 8                                                                            
+DataMove(LocalToDRAM0)#1:                                  8                                           
+LoadWeights#0:            2,112                                                                        
+MatMul#0:                                                                        2,048                 
+MatMul#1:                                                  2,048                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 17 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   392                                                                          
+DataMove(AccToLocal)#1:   392                                                                          
+DataMove(DRAM0ToLocal)#0: 392                                                                          
+DataMove(DRAM0ToLocal)#1: 32                               392                                         
+DataMove(DRAM1ToLocal)#0: 257                                                                          
+DataMove(DRAM1ToLocal)#1:                                                                   257        
+DataMove(LocalToAcc)#0:   392                                                                          
+DataMove(LocalToAcc)#1:   392                                                                          
+DataMove(LocalToDRAM0)#0: 392                                                                          
+DataMove(LocalToDRAM0)#1:                                  392                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                                        49                    
+MatMul#1:                                                  49                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 17 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   392                                                                          
+DataMove(AccToLocal)#1:   392                                                                          
+DataMove(DRAM0ToLocal)#0: 39                                                                           
+DataMove(DRAM0ToLocal)#1: 32                               392                                         
+DataMove(DRAM1ToLocal)#0: 257                                                                          
+DataMove(DRAM1ToLocal)#1:                                                                   257        
+DataMove(LocalToAcc)#0:   392                                                                          
+DataMove(LocalToAcc)#1:   392                                                                          
+DataMove(LocalToDRAM0)#0: 392                                                                          
+DataMove(LocalToDRAM0)#1:                                  392                                         
+LoadWeights#0:            8                                                                            
+MatMul#0:                                                                        49                    
+MatMul#1:                                                  49                                          
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 18 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    64
+Partitions:                                64
+Partition results size:                    49
+Partition accumulator size:                98
+Partition local size:                      7,794
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  14,022
+Partition average number of instructions:  12,987
+Execution latency (MCycles):               2.938
+Aggregate latency (MCycles):               2.938
+Execution energy (MUnits):                 168.862
+Aggregate energy (MUnits):                 168.862
+MAC efficiency (%):                        50.326
+Total number of instructions:              831,295
+Accumulator utilization (%):               4.785
+Local utilization (%):                     95.142
+True MACs (MMAC):                          94.634
+MAC efficiency (%):                        50.326
+--------------------------------------------------
+-----------------------------------------
+LAYER 18 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 753,152 1,806,336
+DataMove(DRAM0ToLocal): 1,023   200,704
+DataMove(DRAM1ToLocal): 64      294,976
+DataMove(AccToLocal):   64      3,136
+SIMD:                   3,200   3,200
+DataMove(LocalToDRAM0): 64      3,136
+LoadWeights:            73,728  331,776
+TOTAL:                  831,295 2,643,264
+-----------------------------------------
+---------------------------------------
+LAYER 18 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 2.101   MCycles
+DataMove(DRAM0ToLocal): 200.704 KCycles
+DataMove(DRAM1ToLocal): 294.976 KCycles
+DataMove(AccToLocal):   3.136   KCycles
+SIMD:                   3.200   KCycles
+DataMove(LocalToDRAM0): 3.136   KCycles
+LoadWeights:            331.776 KCycles
+TOTAL:                  2.938   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 18 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 20.070  MUnits
+DataMove(DRAM1ToLocal): 29.498  MUnits
+DataMove(AccToLocal):   31.360  KUnits
+SIMD:                   25.600  KUnits
+DataMove(LocalToDRAM0): 313.600 KUnits
+LoadWeights:            3.318   MUnits
+TOTAL:                  168.862 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 18 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 1,023                                                                        
+DataMove(DRAM0ToLocal)#1: 1,023                                                                        
+DataMove(DRAM1ToLocal)#0: 64                                                                           
+DataMove(DRAM1ToLocal)#1:                                                                   64         
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   64         
+LoadWeights#0:            36,928                                                                       
+MatMul#0:                 378,880                                                           189,952    12,288
+MatMul#1:                 740,864    12,288                                                            
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 18 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   49                                                                           
+DataMove(AccToLocal)#1:   49                                                                           
+DataMove(DRAM0ToLocal)#0: 1,856                                                                        
+DataMove(DRAM0ToLocal)#1: 1,856                                                                        
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   4,609      
+DataMove(LocalToDRAM0)#0: 49                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   49         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 29         2
+MatMul#1:                 29         2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 18 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   49                                                                           
+DataMove(AccToLocal)#1:   49                                                                           
+DataMove(DRAM0ToLocal)#0: 196                                                                          
+DataMove(DRAM0ToLocal)#1: 196                                                                          
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   4,609      
+DataMove(LocalToDRAM0)#0: 49                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   49         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 6          2
+MatMul#1:                 2          2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 19 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    64
+Partitions:                                64
+Partition results size:                    49
+Partition accumulator size:                147
+Partition local size:                      7,843
+Stage init maximum number of instructions: 1
+Stage init average number of instructions: 1
+Partition maximum number of instructions:  14,073
+Partition average number of instructions:  13,183
+Execution latency (MCycles):               2.948
+Aggregate latency (MCycles):               2.948
+Execution energy (MUnits):                 169.232
+Aggregate energy (MUnits):                 169.232
+MAC efficiency (%):                        50.165
+Total number of instructions:              843,793
+Accumulator utilization (%):               7.178
+Local utilization (%):                     95.740
+True MACs (MMAC):                          94.634
+MAC efficiency (%):                        50.165
+--------------------------------------------------
+-----------------------------------------
+LAYER 19 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------------
+MatMul:                 762,368 1,806,336
+DataMove(DRAM0ToLocal): 1,105   203,840
+DataMove(DRAM1ToLocal): 64      294,976
+DataMove(AccToLocal):   64      3,136
+DataMove(LocalToAcc):   64      3,136
+SIMD:                   6,336   6,336
+DataMove(LocalToDRAM0): 64      3,136
+LoadWeights:            73,728  331,776
+TOTAL:                  843,793 2,652,672
+-----------------------------------------
+---------------------------------------
+LAYER 19 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 2.101   MCycles
+DataMove(DRAM0ToLocal): 203.840 KCycles
+DataMove(DRAM1ToLocal): 294.976 KCycles
+DataMove(AccToLocal):   3.136   KCycles
+DataMove(LocalToAcc):   3.136   KCycles
+SIMD:                   6.336   KCycles
+DataMove(LocalToDRAM0): 3.136   KCycles
+LoadWeights:            331.776 KCycles
+TOTAL:                  2.948   MCycles
+---------------------------------------
+--------------------------------------
+LAYER 19 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 115.606 MUnits
+DataMove(DRAM0ToLocal): 20.384  MUnits
+DataMove(DRAM1ToLocal): 29.498  MUnits
+DataMove(AccToLocal):   31.360  KUnits
+DataMove(LocalToAcc):   31.360  KUnits
+SIMD:                   50.688  KUnits
+DataMove(LocalToDRAM0): 313.600 KUnits
+LoadWeights:            3.318   MUnits
+TOTAL:                  169.232 MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 19 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   64                                                                           
+DataMove(AccToLocal)#1:   64                                                                           
+DataMove(DRAM0ToLocal)#0: 1,105                                                                        
+DataMove(DRAM0ToLocal)#1: 1,041                                                             64         
+DataMove(DRAM1ToLocal)#0: 64                                                                           
+DataMove(DRAM1ToLocal)#1:                                                                   64         
+DataMove(LocalToAcc)#0:   64                                                                           
+DataMove(LocalToAcc)#1:   64                                                                           
+DataMove(LocalToDRAM0)#0: 64                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   64         
+LoadWeights#0:            36,928                                                                       
+MatMul#0:                 391,168                                                           186,880    12,288
+MatMul#1:                 750,080    12,288                                                            
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 19 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   49                                                                           
+DataMove(AccToLocal)#1:   49                                                                           
+DataMove(DRAM0ToLocal)#0: 1,856                                                                        
+DataMove(DRAM0ToLocal)#1: 1,856                                                             50         
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   4,609      
+DataMove(LocalToAcc)#0:   49                                                                           
+DataMove(LocalToAcc)#1:   49                                                                           
+DataMove(LocalToDRAM0)#0: 49                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   49         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 29         2
+MatMul#1:                 29         2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 19 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   49                                                                           
+DataMove(AccToLocal)#1:   49                                                                           
+DataMove(DRAM0ToLocal)#0: 184                                                                          
+DataMove(DRAM0ToLocal)#1: 193                                                               49         
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1:                                                                   4,609      
+DataMove(LocalToAcc)#0:   49                                                                           
+DataMove(LocalToAcc)#1:   49                                                                           
+DataMove(LocalToDRAM0)#0: 49                                                                           
+DataMove(LocalToDRAM0)#1:                                                                   49         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                 6          2
+MatMul#1:                 2          2                                                                 
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 20 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    1
+Partitions:                                2
+Partition results size:                    40
+Partition accumulator size:                2,001
+Partition local size:                      2,001
+Stage init maximum number of instructions: 0
+Stage init average number of instructions: 0
+Partition maximum number of instructions:  2,054
+Partition average number of instructions:  1,654
+Execution latency (KCycles):               9.604
+Aggregate latency (KCycles):               9.604
+Execution energy (KUnits):                 377.820
+Aggregate energy (KUnits):                 377.820
+MAC efficiency (%):                        0.000
+Total number of instructions:              3,308
+Accumulator utilization (%):               97.705
+Local utilization (%):                     24.426
+True MACs (MAC):                           0.000
+MAC efficiency (%):                        0.000
+--------------------------------------------------
+-----------------------------------
+LAYER 20 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+-----------------------------------
+DataMove(DRAM0ToLocal): 98    3,136
+DataMove(DRAM1ToLocal): 2     2
+DataMove(AccToLocal):   2     64
+DataMove(LocalToAcc):   4     3,138
+SIMD:                   3,200 3,200
+DataMove(LocalToDRAM0): 2     64
+TOTAL:                  3,308 9,604
+-----------------------------------
+--------------------------------------
+LAYER 20 INSTRUCTIONS LATENCY
+--------------------------------------
+DataMove(DRAM0ToLocal): 3.136  KCycles
+DataMove(DRAM1ToLocal): 2.000  Cycles
+DataMove(AccToLocal):   64.000 Cycles
+DataMove(LocalToAcc):   3.138  KCycles
+SIMD:                   3.200  KCycles
+DataMove(LocalToDRAM0): 64.000 Cycles
+TOTAL:                  9.604  KCycles
+--------------------------------------
+--------------------------------------
+LAYER 20 INSTRUCTIONS ENERGY
+--------------------------------------
+DataMove(DRAM0ToLocal): 313.600 KUnits
+DataMove(DRAM1ToLocal): 200.000 Units
+DataMove(AccToLocal):   640.000 Units
+DataMove(LocalToAcc):   31.380  KUnits
+SIMD:                   25.600  KUnits
+DataMove(LocalToDRAM0): 6.400   KUnits
+TOTAL:                  377.820 KUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 20 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   2                                                                            
+DataMove(AccToLocal)#1:   2                                                                            
+DataMove(DRAM0ToLocal)#0: 98                                                                           
+DataMove(DRAM0ToLocal)#1: 98                                                                           
+DataMove(DRAM1ToLocal)#0: 2                                                                            
+DataMove(DRAM1ToLocal)#1: 2                                                                            
+DataMove(LocalToAcc)#0:   4                                                                            
+DataMove(LocalToAcc)#1:   4                                                                            
+DataMove(LocalToDRAM0)#0: 2                                                                            
+DataMove(LocalToDRAM0)#1: 2                                                                            
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 20 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   40                                                                           
+DataMove(AccToLocal)#1:   40                                                                           
+DataMove(DRAM0ToLocal)#0: 40                                                                           
+DataMove(DRAM0ToLocal)#1: 40                                                                           
+DataMove(DRAM1ToLocal)#0: 1                                                                            
+DataMove(DRAM1ToLocal)#1: 1                                                                            
+DataMove(LocalToAcc)#0:   1,960                                                                        
+DataMove(LocalToAcc)#1:   1,960                                                                        
+DataMove(LocalToDRAM0)#0: 40                                                                           
+DataMove(LocalToDRAM0)#1: 40                                                                           
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 20 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   32                                                                           
+DataMove(AccToLocal)#1:   32                                                                           
+DataMove(DRAM0ToLocal)#0: 32                                                                           
+DataMove(DRAM0ToLocal)#1: 32                                                                           
+DataMove(DRAM1ToLocal)#0: 1                                                                            
+DataMove(DRAM1ToLocal)#1: 1                                                                            
+DataMove(LocalToAcc)#0:   785                                                                          
+DataMove(LocalToAcc)#1:   785                                                                          
+DataMove(LocalToDRAM0)#0: 32                                                                           
+DataMove(LocalToDRAM0)#1: 32                                                                           
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------
+LAYER 21 SCHEDULER SUMMARY
+--------------------------------------------------
+Stages:                                    16
+Partitions:                                16
+Partition results size:                    8
+Partition accumulator size:                8
+Partition local size:                      4,176
+Stage init maximum number of instructions: 4,104
+Stage init average number of instructions: 4,007
+Partition maximum number of instructions:  1,539
+Partition average number of instructions:  1,503
+Execution latency (KCycles):               209.399
+Aggregate latency (KCycles):               209.399
+Execution energy (MUnits):                 7.761
+Aggregate energy (MUnits):                 7.761
+MAC efficiency (%):                        3.820
+Total number of instructions:              88,173
+Accumulator utilization (%):               0.391
+Local utilization (%):                     50.977
+True MACs (KMAC):                          512.000
+MAC efficiency (%):                        3.820
+--------------------------------------------------
+--------------------------------------
+LAYER 21 INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+--------------------------------------
+MatMul:                 8,000  8,000
+DataMove(DRAM0ToLocal): 16     1,024
+DataMove(DRAM1ToLocal): 64,125 64,125
+DataMove(AccToLocal):   16     125
+DataMove(LocalToDRAM0): 16     125
+LoadWeights:            16,000 72,000
+TOTAL:                  88,173 145,399
+--------------------------------------
+---------------------------------------
+LAYER 21 INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 72.000  KCycles
+DataMove(DRAM0ToLocal): 1.024   KCycles
+DataMove(DRAM1ToLocal): 64.125  KCycles
+DataMove(AccToLocal):   125.000 Cycles
+DataMove(LocalToDRAM0): 125.000 Cycles
+LoadWeights:            72.000  KCycles
+TOTAL:                  209.399 KCycles
+---------------------------------------
+--------------------------------------
+LAYER 21 INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 512.000 KUnits
+DataMove(DRAM0ToLocal): 102.400 KUnits
+DataMove(DRAM1ToLocal): 6.412   MUnits
+DataMove(AccToLocal):   1.250   KUnits
+DataMove(LocalToDRAM0): 12.500  KUnits
+LoadWeights:            720.000 KUnits
+TOTAL:                  7.761   MUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 21 STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   16                                                                           
+DataMove(AccToLocal)#1:   16                                                                           
+DataMove(DRAM0ToLocal)#0: 16                                                                           
+DataMove(DRAM0ToLocal)#1: 16                                                                           
+DataMove(DRAM1ToLocal)#0: 64,125                                                                       
+DataMove(DRAM1ToLocal)#1: 64,125                                                                       
+DataMove(LocalToDRAM0)#0: 16                                                                           
+DataMove(LocalToDRAM0)#1:                                             16                               
+LoadWeights#0:            8,125                                                                        
+MatMul#0:                 8,000                                                                        
+MatMul#1:                 8,000                                                                        
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 21 STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   8                                                                            
+DataMove(AccToLocal)#1:   8                                                                            
+DataMove(DRAM0ToLocal)#0: 64                                                                           
+DataMove(DRAM0ToLocal)#1: 64                                                                           
+DataMove(DRAM1ToLocal)#0: 1                                                                            
+DataMove(DRAM1ToLocal)#1: 1                                                                            
+DataMove(LocalToDRAM0)#0: 8                                                                            
+DataMove(LocalToDRAM0)#1:                                             8                                
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                            
+MatMul#1:                 1                                                                            
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+LAYER 21 STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   8                                                                            
+DataMove(AccToLocal)#1:   8                                                                            
+DataMove(DRAM0ToLocal)#0: 64                                                                           
+DataMove(DRAM0ToLocal)#1: 64                                                                           
+DataMove(DRAM1ToLocal)#0: 1                                                                            
+DataMove(DRAM1ToLocal)#1: 1                                                                            
+DataMove(LocalToDRAM0)#0: 8                                                                            
+DataMove(LocalToDRAM0)#1:                                             8                                
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1                                                                            
+MatMul#1:                 1                                                                            
+-----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+COMPILER SUMMARY
+-------------------------------------------------------------------------------------------------
+Model:                                                resnet18_imagenet_onnx_zyboz7 
+Data type:                                            FP16BP8                       
+Array size:                                           8                             
+DRAM0 memory size (vectors/scalars/bits):             1,048,576                     8,388,608  22
+DRAM1 memory size (vectors/scalars/bits):             4,194,304                     33,554,432 22
+Local memory size (vectors/scalars/bits):             8,192                         65,536     13
+Accumulator memory size (vectors/scalars/bits):       2,048                         16,384     11
+Stride #0 size (bits):                                3                             
+Stride #1 size (bits):                                3                             
+Operand #0 size (bits):                               16                            
+Operand #1 size (bits):                               32                            
+Operand #2 size (bits):                               16                            
+Instruction size (bytes):                             9                             
+DRAM0 maximum usage (vectors/scalars):                74,376                        595,008    
+DRAM0 aggregate usage (vectors/scalars):              281,125                       2,249,000  
+DRAM1 maximum usage (vectors/scalars):                1,462,550                     11,700,400 
+DRAM1 aggregate usage (vectors/scalars):              1,462,550                     11,700,400 
+Local memory maximum usage (vectors/scalars):         8,191                         65,528     
+Local memory aggregate usage (vectors/scalars):       6,649,716                     53,197,728 
+Accumumator memory maximum usage (vectors/scalars):   2,047                         16,376     
+Accumumator memory aggregate usage (vectors/scalars): 734,071                       5,872,568  
+Number of layers:                                     22                            
+Maximum number of stages:                             64                            
+Maximum number of partitions:                         128                           
+Execution latency (MCycles):                          43.798                        
+Aggregate latency (MCycles):                          43.798                        
+Execution energy (GUnits):                            2.726                         
+Aggregate energy (GUnits):                            2.726                         
+MAC efficiency (%):                                   59.323                        
+Total number of instructions:                         6,056,369                     
+Compilation time (seconds):                           12971.800                     
+True consts scalar size:                              11,684,720                    
+Consts utilization (%):                               98.547                        
+True MACs (GMAC):                                     1.663                         
+MAC efficiency (%):                                   59.323                        
+-------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LAYERS SUMMARY
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Layer:                       0       1       2       3       4       5       6       7      8       9       10      11      12     13      14      15      16      17     18      19      20    21
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Number of stages:            8       8       8       8       8       16      16      16     16      16      32      32      16     32      32      64      64      8      64      64      1     16
+Number of partitions:        128     32      40      32      40      64      48      32     48      48      64      64      16     64      64      128     64      8      64      64      2     16
+Latency (MCycles):           6.538   2.074   2.163   2.074   2.163   1.438   2.198   0.281  2.210   2.248   1.532   2.437   0.201  2.444   2.463   2.111   2.935   0.183  2.938   2.948   0.010 0.209
+Energy (MUnits):             414.434 136.549 140.160 136.549 140.160 101.530 142.492 19.545 142.593 144.073 104.739 148.473 13.379 148.523 149.263 118.637 168.836 10.246 168.862 169.232 0.378 7.761
+True MACs (MMAC):            116.215 108.827 108.827 108.827 108.827 55.083  110.166 6.423  110.166 110.166 55.083  104.858 6.423  104.858 104.858 52.429  94.634  6.423  94.634  94.634  0.000 0.512
+MAC efficiency (%):          27.8    82.0    78.6    82.0    78.6    59.9    78.3    35.7   77.9    76.6    56.2    67.2    49.9   67.0    66.5    38.8    50.4    54.8   50.3    50.2    0.0   3.8
+Accumulator utilization (%): 100.0   77.7    99.9    77.7    99.9    22.9    18.8    99.9   37.7    53.5    10.5    8.0     57.4   15.9    23.3    4.4     2.4     57.4   4.8     7.2     97.7  0.4
+Local utilization (%):       66.6    100.0   99.9    100.0   99.9    99.7    99.9    84.0   99.9    99.9    99.8    99.7    51.0   99.7    100.0   99.0    95.1    53.8   95.1    95.7    24.4  51.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------
+TOTAL INSTRUCTIONS COMPOSITION (NUMBER/TOTAL SIZE)
+--------------------------------------------
+MatMul:                 4,802,200 31,710,448
+DataMove(DRAM0ToLocal): 47,074    4,956,216
+DataMove(DRAM1ToLocal): 64,727    1,462,551
+DataMove(AccToLocal):   1,130     230,949
+DataMove(LocalToAcc):   316       95,442
+SIMD:                   610,384   610,384
+DataMove(LocalToDRAM0): 1,130     230,949
+LoadWeights:            529,408   2,382,912
+TOTAL:                  6,056,369 41,679,851
+--------------------------------------------
+---------------------------------------
+TOTAL INSTRUCTIONS LATENCY
+---------------------------------------
+MatMul:                 33.829  MCycles
+DataMove(DRAM0ToLocal): 4.956   MCycles
+DataMove(DRAM1ToLocal): 1.463   MCycles
+DataMove(AccToLocal):   230.949 KCycles
+DataMove(LocalToAcc):   95.442  KCycles
+SIMD:                   610.384 KCycles
+DataMove(LocalToDRAM0): 230.949 KCycles
+LoadWeights:            2.383   MCycles
+TOTAL:                  43.798  MCycles
+---------------------------------------
+--------------------------------------
+TOTAL INSTRUCTIONS ENERGY
+--------------------------------------
+MatMul:                 2.029   GUnits
+DataMove(DRAM0ToLocal): 495.622 MUnits
+DataMove(DRAM1ToLocal): 146.255 MUnits
+DataMove(AccToLocal):   2.309   MUnits
+DataMove(LocalToAcc):   954.420 KUnits
+SIMD:                   4.883   MUnits
+DataMove(LocalToDRAM0): 23.095  MUnits
+LoadWeights:            23.829  MUnits
+TOTAL:                  2.726   GUnits
+--------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+TOTAL STRIDES COUNT SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   1,130                                                                        
+DataMove(AccToLocal)#1:   1,130                                                                        
+DataMove(DRAM0ToLocal)#0: 47,074                                                                       
+DataMove(DRAM0ToLocal)#1: 46,762                           88         96         64         64         
+DataMove(DRAM1ToLocal)#0: 64,727                                                                       
+DataMove(DRAM1ToLocal)#1: 64,127                           40         80         160        320        
+DataMove(LocalToAcc)#0:   316                                                                          
+DataMove(LocalToAcc)#1:   316                                                                          
+DataMove(LocalToDRAM0)#0: 1,130                                                                        
+DataMove(LocalToDRAM0)#1: 2                                280        272        256        320        
+LoadWeights#0:            265,949                                                                      
+MatMul#0:                 2,324,416  60,144                91,392     177,280    330,784    602,912    118,048
+MatMul#1:                 4,746,584  53,568                2,048                                       
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+TOTAL STRIDES MAX SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   796                                                                          
+DataMove(AccToLocal)#1:   796                                                                          
+DataMove(DRAM0ToLocal)#0: 7,200                                                                        
+DataMove(DRAM0ToLocal)#1: 7,200                            682        682        159        50         
+DataMove(DRAM1ToLocal)#0: 4,609                                                                        
+DataMove(DRAM1ToLocal)#1: 1                                577        1,153      2,305      4,609      
+DataMove(LocalToAcc)#0:   1,960                                                                        
+DataMove(LocalToAcc)#1:   1,960                                                                        
+DataMove(LocalToDRAM0)#0: 796                                                                          
+DataMove(LocalToDRAM0)#1: 40                               796        682        163        49         
+LoadWeights#0:            9                                                                            
+MatMul#0:                 1          111                   796        386        159        108        45
+MatMul#1:                 796        196                   49                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+TOTAL STRIDES AVERAGE SIZE SUMMARY
+-----------------------------------------------------------------------------------------------------------------
+Stride:                   1          2          4          8          16         32         64         128       
+-----------------------------------------------------------------------------------------------------------------
+DataMove(AccToLocal)#0:   204                                                                          
+DataMove(AccToLocal)#1:   204                                                                          
+DataMove(DRAM0ToLocal)#0: 105                                                                          
+DataMove(DRAM0ToLocal)#1: 104                              586        327        98         49         
+DataMove(DRAM1ToLocal)#0: 23                                                                           
+DataMove(DRAM1ToLocal)#1: 1                                540        820        1,639      3,278      
+DataMove(LocalToAcc)#0:   302                                                                          
+DataMove(LocalToAcc)#1:   302                                                                          
+DataMove(LocalToDRAM0)#0: 204                                                                          
+DataMove(LocalToDRAM0)#1: 32                               443        254        98         39         
+LoadWeights#0:            8                                                                            
+MatMul#0:                 1          90                    76         34         12         7          7
+MatMul#1:                 7          4                     49                                          
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------
+ARTIFACTS
+-----------------------------------------------------
+Manifest:  /work/resnet18_imagenet_onnx_zyboz7.tmodel
+Program:   /work/resnet18_imagenet_onnx_zyboz7.tprog
+Constants: /work/resnet18_imagenet_onnx_zyboz7.tdata
+-----------------------------------------------------

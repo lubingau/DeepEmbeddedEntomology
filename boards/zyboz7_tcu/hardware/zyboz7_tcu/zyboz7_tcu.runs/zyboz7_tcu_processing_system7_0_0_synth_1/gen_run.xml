@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="zyboz7_tcu_processing_system7_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1724189237">
+  <File Type="VDS-TIMINGSUMMARY" Name="zyboz7_tcu_processing_system7_0_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="zyboz7_tcu_processing_system7_0_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="zyboz7_tcu_processing_system7_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="zyboz7_tcu_processing_system7_0_0_utilization_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="zyboz7_tcu_processing_system7_0_0_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="zyboz7_tcu_processing_system7_0_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="zyboz7_tcu_processing_system7_0_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="zyboz7_tcu_processing_system7_0_0.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="zyboz7_tcu_processing_system7_0_0_drc_synth.rpt"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zyboz7_tcu_processing_system7_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/zyboz7_tcu/ip/zyboz7_tcu_processing_system7_0_0/zyboz7_tcu_processing_system7_0_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="zyboz7_tcu_processing_system7_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zyboz7_tcu_processing_system7_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/zyboz7_tcu/ip/zyboz7_tcu_processing_system7_0_0/zyboz7_tcu_processing_system7_0_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="zyboz7_tcu_processing_system7_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/tcu_zyboz7_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../zyboz7_tcu.srcs/utils_1/imports/synth_1/tcu_zyboz7_wrapper.dcp"/>
+        <Attr Name="ImportTime" Val="1724170831"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
