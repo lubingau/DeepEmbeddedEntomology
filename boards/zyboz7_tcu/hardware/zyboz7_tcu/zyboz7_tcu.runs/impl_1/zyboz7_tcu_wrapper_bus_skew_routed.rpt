@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Wed Aug 21 09:17:29 2024
+| Host         : imne1 running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_bus_skew -warn_on_violation -file zyboz7_tcu_wrapper_bus_skew_routed.rpt -pb zyboz7_tcu_wrapper_bus_skew_routed.pb -rpx zyboz7_tcu_wrapper_bus_skew_routed.rpx
+| Design       : zyboz7_tcu_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

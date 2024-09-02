@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "dataset.h": "c",
+        "math.h": "c",
+        "string.h": "c",
+        "camera.h": "c",
+        "stdio.h": "c",
+        "console.h": "c",
+        "image_processing.h": "c"
+    }
+}

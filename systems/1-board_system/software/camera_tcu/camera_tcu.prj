@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="camera_tcu" location="/home/lubin/DeepEmbeddedEntomology/software/camera_tcu/camera_tcu" platform="/home/lubin/DeepEmbeddedEntomology/software/camera_detect_tcu/system_wrapper/export/system_wrapper/system_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="camera_tcu_system" sysConfig="system_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" language="CPP" mssSignature="4047afecf517fbce55938514660001b9">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.804830814">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.68093206" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

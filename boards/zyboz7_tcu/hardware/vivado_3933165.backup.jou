@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Aug 20 14:51:12 2024
+# Process ID: 3933165
+# Current directory: /home/lubin/deep-embedded-entomology/boards/zyboz7_tcu/hardware
+# Command line: vivado -mode batch -source zyboz7_tcu.tcl
+# Log file: /home/lubin/deep-embedded-entomology/boards/zyboz7_tcu/hardware/vivado.log
+# Journal file: /home/lubin/deep-embedded-entomology/boards/zyboz7_tcu/hardware/vivado.jou
+# Running On: imne1, OS: Linux, CPU Frequency: 4584.867 MHz, CPU Physical cores: 8, Host memory: 16559 MB
+#-----------------------------------------------------------
+source zyboz7_tcu.tcl

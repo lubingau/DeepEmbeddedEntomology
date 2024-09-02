@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "dataset.h": "c",
+        "xuartlite_intr.h": "c"
+    }
+}

@@ -1,0 +1,11 @@
+15:27:49 DEBUG : Logs will be stored at '/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/IDE.log'.
+15:27:50 INFO  : Launching XSCT server: xsct -n  -interactive /home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/temp_xsdb_launch_script.tcl
+15:27:50 INFO  : Registering command handlers for Vitis TCF services
+15:27:51 INFO  : Platform repository initialization has completed.
+15:27:52 INFO  : XSCT server has started successfully.
+15:27:52 INFO  : Successfully done setting XSCT server connection channel  
+15:27:52 INFO  : plnx-install-location is set to ''
+15:27:52 INFO  : Successfully done query RDI_DATADIR 
+15:27:52 INFO  : Successfully done setting workspace for the tool. 
+15:28:11 INFO  : Platform 'system_wrapper' is added to custom repositories.
+15:28:13 INFO  : [Import] Updating active build configuration of the system project 'camera_detect_system' to 'Debug' after the import.
