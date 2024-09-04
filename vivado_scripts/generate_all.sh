@@ -1,9 +1,9 @@
 #!/bin/bash | sudo -E bash hardware/generate_all.sh | execute from the DeepEmbeddedEntomology directory
 start=$(date +%s)
 
-input_model=resnet50_bee306_best.onnx
+input_model=resnet50_tipu12.onnx
 model_name=$(basename "$input_model" .onnx)
-arch_file=zyboz7.tarch
+arch_file=tensil/arch/zyboz7.tarch
 output_dir=dram1_depth_4194304
 project_name=tcu_zyboz7
 design_bd_name=tcu_zyboz7
@@ -40,25 +40,25 @@ do
     find $output_path_rtl -type f -not \( -name "*.v" -o -name "*.log" -o -name "*.h" -o -name "*.t*" -o -name "*.xsa" \) -exec rm {} +
 done
 
-# ######################### VIVADO GENERATION #########################
-# echo " "
-# echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
-# echo "Generate hardware for different architectures"
-# echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
-# echo " "
-# source /home/lubin/vivado2022.sh
-# for array_size in "${array_size_list[@]}"
-# do
-#     echo " "
-#     echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
-#     echo "Generate hardware for array size: $array_size"
-#     echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
-#     echo " "
-#     # Save pwd or output_dir into the variable tmp
-#     tmp=$PWD
-#     source_path=$tmp/$output_dir/$array_size
-#     vivado -mode tcl -source /home/lubin/DeepEmbeddedEntomology/hardware/generate_hardware.tcl -tclargs $project_name $array_size $design_bd_name $source_path
-# done
+######################### VIVADO GENERATION #########################
+echo " "
+echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
+echo "Generate hardware for different architectures"
+echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
+echo " "
+source /home/lubin/vivado2022.sh
+for array_size in "${array_size_list[@]}"
+do
+    echo " "
+    echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
+    echo "Generate hardware for array size: $array_size"
+    echo "-------------------------------------------------------------------------------------------------------------------------------------------------"
+    echo " "
+    # Save pwd or output_dir into the variable tmp
+    tmp=$PWD
+    source_path=$tmp/$output_dir/$array_size
+    vivado -mode tcl -source /home/lubin/DeepEmbeddedEntomology/hardware/generate_hardware.tcl -tclargs $project_name $array_size $design_bd_name $source_path
+done
 
 # Change the owner of the generated files
 sudo chown -R lubin *
