@@ -19,6 +19,9 @@ You can easily run the application on Vitis by importing a Vitis project from a 
 
 If you want to build the application from scratch, create a new application from the `.xsa` file, and then copy all the code into the `src/` directory. Don't forget to increase the heap size in `lscript.ld` and to include `xilffs` libraries in the BSP settings (see [Tensil documentation](https://www.tensil.ai/docs/tutorials/resnet20-zcu104/#tensil-for-vitis-embedded-applications)).
 
+## SD card
+You can find some datasets and the model files in the `zyboz7_sd_card.zip` file on the [Google Drive](https://drive.google.com/drive/folders/1JQ3FcXKEAe1qrBGd0k1jK6t_yANFg63G?usp=sharing).
+
 # Running your own model on the Zybo Z7
 
 If you want to run your own model with your own dataset, you'll have to modify these files:

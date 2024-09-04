@@ -1,5 +1,7 @@
 # Tensil Pipeline
 
+![Tensil pipeline](../docs/tensil_pipeline.png)
+
 We present 3 scripts to automatize the Tensil pipeline. It includes the process of converting, compiling, and generating the necessary files for deploying AI models on Tensil's hardware.
 
 The pipeline consists of three main scripts:

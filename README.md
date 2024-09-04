@@ -1,8 +1,12 @@
+![Logo](./docs/DeepEmbeddedEntomology_logo2.png)
+
 # Deep Embedded Entomology
 
 This project resulted from an internship and the collaboration between ENSEEIHT and the University San Francisco de Quito.
 
 Our main objective was to implement AI on FPGA to study the biodiversity. This objective got refined to "deploy a fully autonomous embedded system in the jungle to classify 12 orders of insects."
+
+Most of the heavy files can be find on this [Google Drive](https://drive.google.com/drive/folders/1JQ3FcXKEAe1qrBGd0k1jK6t_yANFg63G?usp=sharing).
 
 ## 1. Technology used
 
@@ -12,7 +16,7 @@ To achieve our goal, we utilized a diverse set of technologies and tools across 
 
 We worked with various FPGA platforms, each offering unique advantages for our AI deployment :
 - **Zybo Z7**
-- **Kria KV260 Vision AI Starter Kit**
+- **Kria KV260**
 - **Ultra96v2**
 
 ### Operating Systems
@@ -20,6 +24,7 @@ We worked with various FPGA platforms, each offering unique advantages for our A
 To manage the hardware, we employed different operating systems tailored to FPGA development:
 - **PYNQ** -  A Python-based platform that simplifies FPGA programming and allows for rapid prototyping with overlays and high-level APIs.
 - **Petalinux** -     A custom Linux distribution designed for embedded systems, providing control over the system's configuration and optimization for our specific use case.
+- **Bare metal** - Without OS on the Zybo Z7
 
 
 ### Development Platforms
@@ -46,11 +51,12 @@ We compared the use of high-level and low-level programming to find the best sol
 
 ```detection``` details how we implemented detection algorithms to crop images around insects.
 
-```hardware``` contains the code we used on all boards.
+```boards``` contains the code we used on all boards for evaluating the model.
 
 ```tensil``` details how to compile with tensil.
 
 ```vitis_ai``` details how to install and use Vitis AI.
 
+```systems``` contains 2 concepts of traps.
 
-## 3. Main results
+```vivado_scripts``` contains some useful bash and tcl scripts to automatize hardware generation with Vivado.

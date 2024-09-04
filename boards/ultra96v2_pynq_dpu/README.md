@@ -69,7 +69,7 @@ NB2: If this doesn't work, reboot the board to take modifications into account.
 
 Copy ```dpu.bit```, ```dpu.hwh``` and ```dpu.xclbin``` on the board. Don't rename these files and leave them in the same folder. If not, your board won't work.
 
-Also copy your ```xmodel``` to use your AI application.
+Also copy your ```xmodel``` to use your AI application. You can find one on the [Google Drive](https://drive.google.com/drive/folders/1JQ3FcXKEAe1qrBGd0k1jK6t_yANFg63G?usp=sharing).
 
 
 ## Test inference on the board
