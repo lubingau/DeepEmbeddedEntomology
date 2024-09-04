@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="sdx_import_archive_file_v2" value="/home/lubin/DeepEmbeddedEntomology/systems/1-board_system/software/camera_detect_tcu.ide.zip"/>
+	<item key="scw_hwspec_file_selection" value="/home/lubin/DeepEmbeddedEntomology/systems/1-board_system/hardware"/>
+	<item key="sdx_export_archive_directory" value="/home/lubin/DeepEmbeddedEntomology/systems/1-board_system/software"/>
 </section>

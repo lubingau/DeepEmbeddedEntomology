@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="sdx_import_archive_file_v2" value="/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/camera_detect.ide.zip"/>
+	<item key="sdx_export_archive_directory" value="/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software"/>
 </section>

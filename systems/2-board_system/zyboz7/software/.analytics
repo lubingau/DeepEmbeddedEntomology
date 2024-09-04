@@ -1,3 +1,8 @@
 timestamp=[2024-08-29 15:27:50], mode=WORKBENCH_START, duration=0:00:03.556, duration_ms=3556, data={}
 timestamp=[2024-08-29 15:27:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.404, duration_ms=404, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
 timestamp=[2024-08-29 15:27:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.668, duration_ms=668, data={}
+timestamp=[2024-09-04 16:17:39], mode=WORKBENCH_START, duration=0:00:04.088, duration_ms=4088, data={}
+timestamp=[2024-09-04 16:17:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.608, duration_ms=608, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,camera_detect,camera_detect_system,system_wrapper}
+timestamp=[2024-09-04 16:17:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.736, duration_ms=736, data={}
+timestamp=[2024-09-04 16:18:13], mode=PLATFORM_GENERATION, duration=0:00:17.597, duration_ms=17597, data={name=system_wrapper}
+timestamp=[2024-09-04 16:18:19], mode=BUILD, duration=0:00:03.743, duration_ms=3743, data={name=camera_detect, configuration=Debug, clean_build=false}

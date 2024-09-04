@@ -1,0 +1,72 @@
+16:18:15 **** Build of configuration Debug for project camera_detect ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/ov5640/OV5640.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640/OV5640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/ov5640/OV5640.d" -MT"src/ov5640/OV5640.o" -o "src/ov5640/OV5640.o" "../src/ov5640/OV5640.c"
+Finished building: ../src/ov5640/OV5640.c
+ 
+Building file: ../src/model/dataset.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/model/dataset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/model/dataset.d" -MT"src/model/dataset.o" -o "src/model/dataset.o" "../src/model/dataset.c"
+Finished building: ../src/model/dataset.c
+ 
+Building file: ../src/detection/camera.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/detection/camera.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/detection/camera.d" -MT"src/detection/camera.o" -o "src/detection/camera.o" "../src/detection/camera.c"
+../src/detection/camera.c:53:6: warning: 'void define_resolution(int, int, int, digilent::OV5640_cfg::mode_t&)' defined but not used [-Wunused-function]
+   53 | void define_resolution(int width, int height, int fps, OV5640_cfg::mode_t &mode)
+      |      ^~~~~~~~~~~~~~~~~
+Finished building: ../src/detection/camera.c
+ 
+Building file: ../src/detection/detect.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/detection/detect.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/detection/detect.d" -MT"src/detection/detect.o" -o "src/detection/detect.o" "../src/detection/detect.c"
+../src/detection/detect.c: In function 'void runDetection(const u8*, const u8*, const u8*, u8*, int (*)[2], int (*)[4], int (*)[2000][2], int (*)[2], u16*, int*, u8)':
+../src/detection/detect.c:398:21: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  398 |                 int error = 0;
+      |                     ^~~~~
+Finished building: ../src/detection/detect.c
+ 
+Building file: ../src/detection/image_processing.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/detection/image_processing.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/detection/image_processing.d" -MT"src/detection/image_processing.o" -o "src/detection/image_processing.o" "../src/detection/image_processing.c"
+Finished building: ../src/detection/image_processing.c
+ 
+Building file: ../src/console/console.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/console/console.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/console/console.d" -MT"src/console/console.o" -o "src/console/console.o" "../src/console/console.c"
+Finished building: ../src/console/console.c
+ 
+Building file: ../src/console/stopwatch.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/console/stopwatch.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/console/stopwatch.d" -MT"src/console/stopwatch.o" -o "src/console/stopwatch.o" "../src/console/stopwatch.c"
+Finished building: ../src/console/stopwatch.c
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: camera_detect.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/lubin/DeepEmbeddedEntomology/systems/2-board_system/zyboz7/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "camera_detect.elf" ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/model/dataset.o  ./src/detection/camera.o ./src/detection/detect.o ./src/detection/image_processing.o  ./src/console/console.o ./src/console/stopwatch.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: camera_detect.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size camera_detect.elf  |tee "camera_detect.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 740652	   4048	58361392	59106092	385e32c	camera_detect.elf
+Finished building: camera_detect.elf.size
+ 
+
+16:18:19 Build Finished (took 3s.725ms)
+

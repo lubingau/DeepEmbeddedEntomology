@@ -3,7 +3,7 @@
 You can easily build the hardware with Vivado in batch mode:
 
 ```bash
-vivado -mode batch -source zyboz7_tcu.tcl
+vivado -mode batch -source tcu_zyboz7.tcl
 ```
 
 Then open Vivado in gui mode, generate the bitstream, and export the hardware into a `.xsa` file.
